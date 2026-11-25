@@ -86,6 +86,12 @@ begin
   end loop;
 end $$;
 
+-- Permisos de la API. Los proyectos nuevos de Supabase no los dan automáticamente;
+-- RLS (arriba) decide luego qué filas puede tocar cada rol.
+grant usage on schema public to anon, authenticated;
+grant select on public.categories, public.products, public.product_images, public.product_variants, public.site_content to anon, authenticated;
+grant insert, update, delete on public.categories, public.products, public.product_images, public.product_variants, public.site_content to authenticated;
+
 -- =====================================================================
 -- Storage: bucket público "productos" para las fotos (máx. 5 MB, solo imágenes).
 -- =====================================================================
