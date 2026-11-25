@@ -1,0 +1,1619 @@
+{
+ "tienda": "Dögker",
+ "fuente": "Catálogo de WhatsApp Business",
+ "extraido": "2026-11-19",
+ "total_productos": 123,
+ "colecciones": [
+  "Peluches Dispensador",
+  "Peluches Lisos",
+  "Peluches Alargados",
+  "Peluches Coloridos",
+  "Peluches Pequeños",
+  "Peluches Criaturas",
+  "Transportadores",
+  "Arneses",
+  "Comederos & Bebederos",
+  "Areneras",
+  "Collares & Correas Perros",
+  "Collares para Gato",
+  "Juguetes",
+  "Juguetes en TPR",
+  "Lazos",
+  "Portabolsas",
+  "Cuidado del Peludito",
+  "Cepillos",
+  "Premios & Alimentación"
+ ],
+ "productos": [
+  {
+   "id": "peluche-mister-aguila",
+   "nombre": "Peluche Mister Águila",
+   "nombre_original": "Peluche Mister Águila",
+   "descripcion": "Un águila con un aire travieso para darle un nuevo compañero a tu perro. Su cuello largo con textura de escamas contrasta con la cabeza y el cuerpo de peluche, mientras las alas estampadas completan el personaje. Un diseño para explorar y llevar de una aventura a la siguiente. Color: Café, con cuello, pico y patas en tono durazno y alas estampadas. Dimensiones: 22 x 34 cm de alto",
+   "precio": 67400,
+   "precio_texto": "$67.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Alargados"
+   ],
+   "imagen": "imagenes/peluche-mister-aguila.jpg"
+  },
+  {
+   "id": "collar-para-gatos-flores-delicadas",
+   "nombre": "Collar para Gatos Flores Delicadas",
+   "nombre_original": "Collar para Gatos Flores Delicadas",
+   "descripcion": "Las flores en tonos morados crean un diseño delicado y elegante que resalta sin ser exagerado. Incluye cascabel y argolla para que puedas completar el collar con su placa de identificación. Color: Morado 🟣",
+   "precio": 14800,
+   "precio_texto": "$14.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gatos-flores-delicadas.jpg"
+  },
+  {
+   "id": "collar-para-gatos-happy-cats",
+   "nombre": "Collar para Gatos Happy Cats",
+   "nombre_original": "Collar para Gatos Happy Cats",
+   "descripcion": "Colorido, alegre y tan simpático como su nombre. El estampado de gatos felices está disponible en varios tonos e incluye cascabel y argolla para que puedas personalizarlo con su placa de identificación. Colores: Naranja 🟠 Morado 🟣 Rosado 🩷 Rojo ❤️ Azul 🔵 Verde 🟢",
+   "precio": 14100,
+   "precio_texto": "$14.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Collares para Gato"
+   ],
+   "imagen": "imagenes/collar-para-gatos-happy-cats.jpg"
+  },
+  {
+   "id": "correa-collar-extreme-solida-azul",
+   "nombre": "Correa & Collar Extreme Sólida Azul",
+   "nombre_original": "Correa & Collar Extreme Sólida Azul",
+   "descripcion": "Un collar sencillo, resistente y con colores que se hacen notar. Está pensado para acompañar a tu perro todos los días con un ajuste cómodo y un estilo fácil de combinar. Disfruta el paseo con una correa firme, cómoda de llevar y llena de color. Su diseño sólido combina con el collar Extreme y te ayuda a mantener a tu perro cerca con mayor confianza. Color: Azul Precios por separado: Collar talla S: $31.200 Collar talla M: $39.800 Correa: $57.800",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 31200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/correa-collar-extreme-solida-azul.jpg"
+  },
+  {
+   "id": "peluche-mapache-alargado",
+   "nombre": "Peluche Mapache Alargado",
+   "nombre_original": "Peluche Mapache Alargado",
+   "descripcion": "Su diseño de mapache alargado y su carita tierna lo convierten en un compañero divertido a la hora de jugar. Su cuerpo acanalado y sus extremidades suaves ofrecen diferentes texturas para explorar, mientras que su forma alargada facilita que los perros lo agarren, sacudan y lleven de un lado a otro. Un juguete ideal para esos peluditos que disfrutan de la compañía de un buen amigo durante sus momentos de juego. Color: Gris, beige y café, con detalles blancos Dimensiones: 12 x 52 cm.",
+   "precio": 40700,
+   "precio_texto": "$40.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-mapache-alargado.jpg"
+  },
+  {
+   "id": "collar-running",
+   "nombre": "Collar Running",
+   "nombre_original": "Collar Running",
+   "descripcion": "Si tu perrito disfruta salir, correr y explorar, este collar está hecho para acompañar su energía. Su diseño de rombos, los detalles reflectivos y la variedad de tallas crean una combinación práctica, cómoda y con un aire deportivo. Colores: Azul 🔵 Rosado 🩷 Rojo 🔴 Negro ⚫️ Tallas: S (2 cm x 30-40 cm), M (2,5 cm x 35-51 cm), L (3,2 cm x 42-66 cm) y XL (3,8 cm x 48-76 cm) Precios: S: $32.300 M: $37.600 L: $43.800 XL: $49.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 32300,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-running.jpg"
+  },
+  {
+   "id": "juguete-limon-en-tpr",
+   "nombre": "Juguete Limón en TPR",
+   "nombre_original": "Juguete Limón en TPR",
+   "descripcion": "Una tajada de limón para un perro que siempre quiere algo nuevo por explorar. Sus segmentos en relieve y el borde texturizado le dan distintas superficies para mordisquear. Está elaborado en TPR, incluye pito y puede congelarse para variar sus ratos de juego. Color: Naranja y verde. Dimensiones: 11,5 cm",
+   "precio": 14400,
+   "precio_texto": "$14.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Juguetes en TPR"
+   ],
+   "imagen": "imagenes/juguete-limon-en-tpr.jpg"
+  },
+  {
+   "id": "transportador-rel-azul",
+   "nombre": "Transportador REL - Azul",
+   "nombre_original": "Transportador REL - Azul",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Azul 🔵 Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/transportador-rel-azul.jpg"
+  },
+  {
+   "id": "peluche-dispensador-dinosaurio",
+   "nombre": "Peluche dispensador Dinosaurio",
+   "nombre_original": "Peluche dispensador Dinosaurio 🦖",
+   "descripcion": "La próxima aventura de tu perro puede empezar con este pequeño dinosaurio. Sus cuernos y sus tonos verdes le dan un aspecto simpático, mientras el peluche suave invita a acercarse. En la barriga tiene un dispensador para colocar premios y añadir una sorpresa a la diversión. Color: Verde claro y verde oscuro, con cuernos crema y dispensador verde 💚 Dimensiones: 18 x 27 cm de alto",
+   "precio": 61300,
+   "precio_texto": "$61.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-dinosaurio.jpg"
+  },
+  {
+   "id": "transportador-rel-rojo",
+   "nombre": "Transportador REL - Rojo",
+   "nombre_original": "Transportador REL - Rojo",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Rojo 🔴 Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [
+    "Transportadores"
+   ],
+   "imagen": "imagenes/transportador-rel-rojo.jpg"
+  },
+  {
+   "id": "comedero-dinastia-verde",
+   "nombre": "Comedero Dinastía Verde",
+   "nombre_original": "Comedero Dinastía Verde",
+   "descripcion": "Un rincón de alimentación cómodo también puede verse bonito. Este comedero elevado tiene dos espacios y un diseño de huesito en dos tonos, pensado para acompañar sus comidas con una postura más natural y un toque especial en casa. Color: Verde 🟢 Dimensiones: 47 x 25,4 x 20,3 cm de alto",
+   "precio": 71200,
+   "precio_texto": "$71.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-dinastia-verde.jpg"
+  },
+  {
+   "id": "transportador-rel-gris",
+   "nombre": "Transportador REL - Gris",
+   "nombre_original": "Transportador REL - Gris",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Gris 🩶 Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/transportador-rel-gris.jpg"
+  },
+  {
+   "id": "peluche-monkey-rosado",
+   "nombre": "Peluche Monkey Rosado",
+   "nombre_original": "Peluche Monkey Rosado",
+   "descripcion": "Un compañero de juegos suave, llamativo y listo para acompañar muchas aventuras. Su divertida forma de mono y su tela resistente lo convierten en una buena opción para que tu mascota muerda, sacuda y se entretenga. Color: Rosado Dimensiones: 32 x 17 cm",
+   "precio": 29800,
+   "precio_texto": "$29.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Criaturas"
+   ],
+   "imagen": "imagenes/peluche-monkey-rosado.jpg"
+  },
+  {
+   "id": "panal-postquirurgico-y-antimarcas-para-macho",
+   "nombre": "Pañal postquirúrgico y antimarcas para macho",
+   "nombre_original": "Pañal postquirúrgico y antimarcas para macho",
+   "descripcion": "Pensado para esos momentos en los que necesita un poco más de cuidado. Ayuda a mantener la higiene durante la recuperación posquirúrgica y también puede utilizarse para controlar marcajes o escapes ocasionales en casa. Tallas: S, L y XL Precios: S: $23.100 L: $28.400 XL: $31.200",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 23100,
+   "moneda": "COP",
+   "colecciones": [
+    "Cuidado del Peludito"
+   ],
+   "imagen": "imagenes/panal-postquirurgico-y-antimarcas-para-macho.jpg"
+  },
+  {
+   "id": "peluche-mister-flamenco",
+   "nombre": "Peluche Mister Flamenco",
+   "nombre_original": "Peluche Mister Flamenco",
+   "descripcion": "Entre el rosa, el mechón azul y sus ojos grandes, este flamenco sabe cómo llamar la atención. Su cuello largo con textura de escamas y sus patas colgantes le dan un aspecto muy divertido. Un personaje lleno de color para acompañar los juegos de tu perro y esos momentos que disfrutan juntos. Color: Rosado, con detalles azules, blancos y negros. Dimensiones: 17 x 45 cm de alto",
+   "precio": 67400,
+   "precio_texto": "$67.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Alargados"
+   ],
+   "imagen": "imagenes/peluche-mister-flamenco.jpg"
+  },
+  {
+   "id": "peluche-aguila-hunter",
+   "nombre": "Peluche Águila Hunter",
+   "nombre_original": "Peluche Águila Hunter 🦅",
+   "descripcion": "Una pequeña aventura con alas para compartir con tu perro. Esta águila combina un cuerpo de peluche suave con alas estampadas, cabeza blanca y un pico curvo que resalta su diseño. Su forma alargada invita a llevarla, buscarla y volver contigo para seguir jugando. Color: Café y blanco, con alas en tonos beige y café oscuro y detalles anaranjados. ⚪️🤎 Dimensiones: 37 x 10 cm de alto",
+   "precio": 40700,
+   "precio_texto": "$40.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Lisos"
+   ],
+   "imagen": "imagenes/peluche-aguila-hunter.jpg"
+  },
+  {
+   "id": "comedero-para-perros-ansiosos-huesos",
+   "nombre": "Comedero para perros ansiosos Huesos",
+   "nombre_original": "Comedero para perros ansiosos Huesos",
+   "descripcion": "Si tu perro termina su comida en segundos, este comedero puede ayudarlo a bajar el ritmo. El relieve en forma de huesos distribuye el alimento en distintos espacios y convierte la hora de comer en una experiencia más pausada. Colores: Rosado Gris Azul Verde",
+   "precio": 16400,
+   "precio_texto": "$16.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Comederos & Bebederos"
+   ],
+   "imagen": "imagenes/comedero-para-perros-ansiosos-huesos.jpg"
+  },
+  {
+   "id": "correa-collar-extreme-dual-rosada",
+   "nombre": "Correa & Collar Extreme Dual - Rosada",
+   "nombre_original": "Correa & Collar Extreme Dual - Rosada",
+   "descripcion": "Dos colores que se complementan para crear un collar diferente y muy fácil de lucir. Su diseño resistente acompaña a tu perro con comodidad, tanto en casa como durante sus paseos. El complemento perfecto para el collar Extreme Dual Color. Su combinación de tonos le da un aire alegre, mientras su diseño firme te permite compartir cada paseo con mayor tranquilidad y control. Colores: Rosada Precios: Collar talla S: $31.200 Collar talla M: $39.800 Correa: $57.800",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 31200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/correa-collar-extreme-dual-rosada.jpg"
+  },
+  {
+   "id": "tt-series-rocket-cat-litter-box-rosa",
+   "nombre": "TT Series Rocket Cat Litter Box Rosa",
+   "nombre_original": "TT Series Rocket Cat Litter Box Rosa",
+   "descripcion": "Privacidad para tu gato y una limpieza más sencilla para ti. Su original diseño de cohete tiene entrada frontal, salida superior, respiraderos y bandeja corrediza; también incluye pala y portapala para mantener cada cosa en su lugar. Color: Rosado Dimensiones: 56 x 51 x 39 cm",
+   "precio": 174700,
+   "precio_texto": "$174.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Areneras"
+   ],
+   "imagen": "imagenes/tt-series-rocket-cat-litter-box-rosa.jpg"
+  },
+  {
+   "id": "juguete-de-vinilo-bananos",
+   "nombre": "Juguete de vinilo Bananos",
+   "nombre_original": "Juguete de vinilo Bananos",
+   "descripcion": "Este banano está hecho para llamar su atención desde el primer momento. Al presionarlo emite sonido, invitando a tu mascota a morder, perseguir y repetir el juego una y otra vez. Color: Amarillo Dimensiones: 10 cm",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Juguetes"
+   ],
+   "imagen": "imagenes/juguete-de-vinilo-bananos.jpg"
+  },
+  {
+   "id": "lazo-nudo-verdugo-azul",
+   "nombre": "Lazo nudo Verdugo Azul",
+   "nombre_original": "Lazo nudo Verdugo Azul",
+   "descripcion": "Sujeta el aro del lazo y deja que comience ese juego que tanto disfruta contigo. Su trenzado forma un nudo alargado y termina en una pelota con aberturas y relieves, reuniendo distintas texturas en un mismo juguete. Una invitación a compartir un rato de movimiento y atención. Colores: Pelota azul con lazo azul, celeste y blanco Dimensiones: 33 cm de largo; pelota de 6 cm de diámetro.",
+   "precio": 20700,
+   "precio_texto": "$20.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Lazos"
+   ],
+   "imagen": "imagenes/lazo-nudo-verdugo-azul.jpg"
+  },
+  {
+   "id": "arenera-doble-altura-con-pala-y-portapala-azul",
+   "nombre": "Arenera doble altura con pala y portapala - Azul",
+   "nombre_original": "Arenera doble altura con pala y portapala - Azul",
+   "descripcion": "Una arenera sencilla y cómoda para acompañar sus primeros aprendizajes. La doble altura ayuda a contener mejor la arena y su formato abierto facilita el ingreso; además, viene con pala y portapala para tener todo a mano. Azul 🔵 Dimensiones: 39 x 54 x 24 cm de alto",
+   "precio": 110300,
+   "precio_texto": "$110.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-doble-altura-con-pala-y-portapala-azul.jpg"
+  },
+  {
+   "id": "bebedero-portatil-ciclovia",
+   "nombre": "Bebedero Portátil Ciclovía",
+   "nombre_original": "Bebedero Portátil Ciclovía",
+   "descripcion": "Para que el agua nunca falte durante una caminata o un día fuera de casa. Su formato tipo termo es cómodo de llevar y te permite ofrecerle a tu mascota una pausa refrescante cuando la necesite. Colores: Azul 🔵 Rosado🩷",
+   "precio": 15100,
+   "precio_texto": "$15.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/bebedero-portatil-ciclovia.jpg"
+  },
+  {
+   "id": "peluche-dispensador-jirafa",
+   "nombre": "Peluche dispensador Jirafa",
+   "nombre_original": "Peluche dispensador Jirafa 🦒",
+   "descripcion": "Esta jirafa tiene una sorpresa en la barriga: un espacio para colocar premios y hacer más interesante el juego. Su peluche suave, las manchas y las patitas oscuras le dan una apariencia tierna, mientras el dispensador invita a tu perro a explorar en busca de algo rico. Color: Café y crema, con detalles café oscuro y dispensador naranja🟠 Dimensiones: 18 x 27 cm de alto",
+   "precio": 63600,
+   "precio_texto": "$63.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-jirafa.jpg"
+  },
+  {
+   "id": "juguete-pina-en-tpr",
+   "nombre": "Juguete Piña en TPR",
+   "nombre_original": "Juguete Piña en TPR",
+   "descripcion": "Una piña que convierte la hora de jugar en una pequeña aventura tropical. Está hecha en TPR, tiene una superficie con relieves e incluye pito para despertar su curiosidad. También puedes congelarla y darle a tu perro otra forma de disfrutar su juguete. Color: Amarillo y verde. Dimensiones: 11,5 cm",
+   "precio": 14400,
+   "precio_texto": "$14.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Juguetes en TPR"
+   ],
+   "imagen": "imagenes/juguete-pina-en-tpr.jpg"
+  },
+  {
+   "id": "comedero-dinastia-gris",
+   "nombre": "Comedero Dinastía Gris",
+   "nombre_original": "Comedero Dinastía Gris",
+   "descripcion": "Un rincón de alimentación cómodo también puede verse bonito. Este comedero elevado tiene dos espacios y un diseño de huesito en dos tonos, pensado para acompañar sus comidas con una postura más natural y un toque especial en casa. Color: Gris 🩶 Dimensiones: 47 x 25,4 x 20,3 cm de alto",
+   "precio": 71200,
+   "precio_texto": "$71.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-dinastia-gris.jpg"
+  },
+  {
+   "id": "arenera-max-2-en-1-gris",
+   "nombre": "Arenera Max 2 en 1 - Gris",
+   "nombre_original": "Arenera Max 2 en 1 - Gris",
+   "descripcion": "Un diseño versátil que se adapta a distintos momentos del día. Puedes usarla como arenera y, cuando quieras convertirla en un lugar de descanso, colocar el cojín premium incluido para crear una cama cómoda para tu gato. Gris 🩶 Dimensiones: 64 x 42 x 33 cm de alto",
+   "precio": 138600,
+   "precio_texto": "$138.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-max-2-en-1-gris.jpg"
+  },
+  {
+   "id": "correa-collar-extreme-solida-negra",
+   "nombre": "Correa & Collar Extreme Sólida - Negra",
+   "nombre_original": "Correa & Collar Extreme Sólida - Negra",
+   "descripcion": "Un collar sencillo, resistente y con colores que se hacen notar. Está pensado para acompañar a tu perro todos los días con un ajuste cómodo y un estilo fácil de combinar. Disfruta el paseo con una correa firme, cómoda de llevar y llena de color. Su diseño sólido combina con el collar Extreme y te ayuda a mantener a tu perro cerca con mayor confianza. Color: Negro Precios: Collar talla S: $31.200 Collar talla M: $39.800 Correa: $57.800",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 31200,
+   "moneda": "COP",
+   "colecciones": [
+    "Collares & Correas Perros"
+   ],
+   "imagen": "imagenes/correa-collar-extreme-solida-negra.jpg"
+  },
+  {
+   "id": "arenera-capsula-2-en-1",
+   "nombre": "Arenera Cápsula 2 en 1",
+   "nombre_original": "Arenera Cápsula 2 en 1",
+   "descripcion": "Cuando viajas con tu gato, contar con accesorios prácticos hace toda la diferencia. Esta cápsula funciona como transportador y también como arenera, por lo que resulta muy útil en desplazamientos, visitas o lugares con poco espacio. Colores: Beige 🤎 Gris 🩶",
+   "precio": 220300,
+   "precio_texto": "$220.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-capsula-2-en-1.jpg"
+  },
+  {
+   "id": "correa-collar-extreme-dual-azul",
+   "nombre": "Correa & Collar Extreme Dual - Azul",
+   "nombre_original": "Correa & Collar Extreme Dual  - Azul",
+   "descripcion": "El complemento perfecto para el collar Extreme Dual Color. Su combinación de tonos le da un aire alegre, mientras su diseño firme te permite compartir cada paseo con mayor tranquilidad y control. Dos colores que se complementan para crear un collar diferente y muy fácil de lucir. Su diseño resistente acompaña a tu perro con comodidad, tanto en casa como durante sus paseos. Color: Azul Precios: Collar talla S: $31.200 Collar talla M: $39.800 Correa: $57.800",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 31200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/correa-collar-extreme-dual-azul.jpg"
+  },
+  {
+   "id": "comedero-inteligente-interactivo",
+   "nombre": "Comedero inteligente Interactivo",
+   "nombre_original": "Comedero inteligente Interactivo",
+   "descripcion": "Aquí la comida también se convierte en juego. Tu mascota aprende a presionar el botón para recibir el alimento, una dinámica que despierta su curiosidad y la mantiene entretenida. Los apoyos antideslizantes le dan mayor estabilidad durante el uso. Colores: Rosado Verde Azul Dimensiones: 17,3 x 16,8 x 17,6 cm",
+   "precio": 118700,
+   "precio_texto": "$118.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-inteligente-interactivo.jpg"
+  },
+  {
+   "id": "juguete-de-vinilo-racimo-de-bananos",
+   "nombre": "Juguete de Vinilo Racimo de Bananos",
+   "nombre_original": "Juguete de Vinilo Racimo de Bananos",
+   "descripcion": "Este racimo de bananos está hecho para llamar su atención desde el primer momento. Al presionarlo emite sonido, invitando a tu mascota a morder, perseguir y repetir el juego una y otra vez. Color: Amarillo Dimensiones: 10 cm",
+   "precio": 4600,
+   "precio_texto": "$4.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/juguete-de-vinilo-racimo-de-bananos.jpg"
+  },
+  {
+   "id": "peluche-leon-alargado",
+   "nombre": "Peluche León alargado",
+   "nombre_original": "Peluche León alargado",
+   "descripcion": "Su melena y su carita de león le dan un aire aventurero a la hora de jugar. El cuerpo alargado y acanalado se combina con pequeñas patas y una cola con mechón, creando distintas texturas para explorar. Un compañero para esos perros que disfrutan llevar su juguete de un lado a otro. Color: Beige y café, con melena caramelo. Dimensiones: 16 x 42 cm de alto",
+   "precio": 44200,
+   "precio_texto": "$44.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Alargados"
+   ],
+   "imagen": "imagenes/peluche-leon-alargado.jpg"
+  },
+  {
+   "id": "peluche-oveja-alargada",
+   "nombre": "Peluche Oveja alargada",
+   "nombre_original": "Peluche Oveja alargada",
+   "descripcion": "Una ovejita diferente para acompañar sus aventuras de todos los días. Su diseño alargado combina un cuerpo gris acanalado con zonas blancas de textura rizada y pequeñas patas oscuras. Un compañero de aspecto tierno para renovar sus momentos de juego. Color: Blanco y gris con detalles gris oscuro. Dimensiones: 15 x 41 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-oveja-alargada.jpg"
+  },
+  {
+   "id": "arnes-honey-azul",
+   "nombre": "Arnés Honey - Azul",
+   "nombre_original": "Arnés Honey - Azul",
+   "descripcion": "Que cada paseo se sienta cómodo desde el primer paso. El arnés Honey tiene una estructura de buen grosor que brinda soporte y se adapta al cuerpo de tu mascota, con varios colores para elegir el que mejor refleje su personalidad. Color: Azul 🔵 Tallas: XS, S, L y XL Precios: XS: $48.200 S: $57.800 L: $59.000 XL: $63.600",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 48200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arnes-honey-azul.jpg"
+  },
+  {
+   "id": "collar-para-gatos-cool-cat",
+   "nombre": "Collar para Gatos Cool Cat",
+   "nombre_original": "Collar para Gatos Cool Cat",
+   "descripcion": "Lleno de color y actitud, este collar está pensado para gatos que siempre se hacen notar. Su estampado Cool Cat viene en varios tonos e incluye cascabel y argolla para la placa de identificación. Colores: Azul 🔵 Rojo 🔴 Naranja 🟠 Rosado 🩷 Morado 🟣 Verde 🟢",
+   "precio": 16200,
+   "precio_texto": "$16.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gatos-cool-cat.jpg"
+  },
+  {
+   "id": "portabolsas-soda",
+   "nombre": "Portabolsas - Soda",
+   "nombre_original": "Portabolsas - Soda",
+   "descripcion": "Las bolsas siempre estarán a mano cuando llegue el momento de usarlas. Sus divertidos diseños de lata y cupcake convierten un accesorio necesario en un detalle con estilo para acompañar cada paseo. Color: Azul 🔵",
+   "precio": 13600,
+   "precio_texto": "$13.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Portabolsas"
+   ],
+   "imagen": "imagenes/portabolsas-soda.jpg"
+  },
+  {
+   "id": "arnes-honey-rojo",
+   "nombre": "Arnés Honey - Rojo",
+   "nombre_original": "Arnés Honey - Rojo",
+   "descripcion": "Que cada paseo se sienta cómodo desde el primer paso. El arnés Honey tiene una estructura de buen grosor que brinda soporte y se adapta al cuerpo de tu mascota, con varios colores para elegir el que mejor refleje su personalidad. Color: Rojo 🔴 Tallas: XS, S, L y XL Precios: XS: $48.200 S: $57.800 L: $59.000 XL: $63.600",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 48200,
+   "moneda": "COP",
+   "colecciones": [
+    "Arneses"
+   ],
+   "imagen": "imagenes/arnes-honey-rojo.jpg"
+  },
+  {
+   "id": "transportador-rel-negro",
+   "nombre": "Transportador REL - Negro",
+   "nombre_original": "Transportador REL - Negro",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Negro ⚫️ Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [
+    "Transportadores"
+   ],
+   "imagen": "imagenes/transportador-rel-negro.jpg"
+  },
+  {
+   "id": "collar-para-gatos-coronas",
+   "nombre": "Collar para gatos Coronas",
+   "nombre_original": "Collar para gatos Coronas",
+   "descripcion": "Porque en casa él siempre será el rey. Este collar con estampado de coronas está disponible en varios colores e incluye cascabel y argolla para colocar su placa de identificación. Colores: Rojo 🔴 Celeste 🔵 Durazno 🍑 Verde 🟢 Fucsia 🟣",
+   "precio": 14600,
+   "precio_texto": "$14.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gatos-coronas.jpg"
+  },
+  {
+   "id": "peluche-puerquito",
+   "nombre": "Peluche Puerquito",
+   "nombre_original": "Peluche Puerquito",
+   "descripcion": "Un toque de ternura para hacer más divertidos sus días. Este puerquito combina material suave con accesorios laterales texturados, ofreciendo variedad en un mismo juguete. Su carita simpática y sus pequeñas orejas lo hacen tan encantador como entretenido. Color: Rosado con accesorios rojos y franjas oscuras y blancas. Dimensiones: 12,5 x 12 cm",
+   "precio": 24300,
+   "precio_texto": "$24.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Pequeños"
+   ],
+   "imagen": "imagenes/peluche-puerquito.jpg"
+  },
+  {
+   "id": "cepillo-expulsapelo-rectangular",
+   "nombre": "Cepillo Expulsapelo rectangular",
+   "nombre_original": "Cepillo Expulsapelo rectangular",
+   "descripcion": "Cepillarlo puede ser un momento agradable para los dos. Sus cerdas recogen el pelo suelto y, al terminar, solo tienes que presionar el botón para retirarlo con facilidad y dejar el cepillo listo para la próxima sesión. Colores: Naranja 🟠 Amarillo 🟡 Azul 🔵",
+   "precio": 41700,
+   "precio_texto": "$41.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Cepillos"
+   ],
+   "imagen": "imagenes/cepillo-expulsapelo-rectangular.jpg"
+  },
+  {
+   "id": "correa-todo-mountain-negra",
+   "nombre": "Correa Todo Mountain Negra",
+   "nombre_original": "Correa Todo Mountain Negra",
+   "descripcion": "Las mejores aventuras comienzan con una correa cómoda y confiable. Su tejido resistente y los detalles reflectivos te ayudan a llevar a tu perro con mayor control, tanto en el paseo diario como en una salida al aire libre. Color: Negro Tallas: S y L Precios: S: $19.300 L: $22.200",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 19300,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/correa-todo-mountain-negra.jpg"
+  },
+  {
+   "id": "peluche-mono-alargado",
+   "nombre": "Peluche Mono alargado",
+   "nombre_original": "Peluche Mono alargado",
+   "descripcion": "Si tu perro siempre llega con un juguete para invitarte a jugar, este mono puede ser su próximo elegido. Su cuerpo alargado y acanalado, sus pequeñas extremidades y su cara sonriente forman un compañero con mucho carácter para disfrutar esos momentos juntos. Color: Café con rostro y detalles beige. Dimensiones: 17 x 42 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-mono-alargado.jpg"
+  },
+  {
+   "id": "peluche-dispensador-unicornio",
+   "nombre": "Peluche dispensador Unicornio",
+   "nombre_original": "Peluche dispensador Unicornio 🦄",
+   "descripcion": "Un poco de fantasía también cabe en su caja de juguetes. Este unicornio de peluche suave combina un cuerno multicolor con un dispensador fucsia en la barriga para colocar premios. Su diseño alegre invita a tu perro a acercarse, explorar y descubrir lo que le has preparado. Color: Rosado y blanco, con detalles fucsia, crin morada y cuerno multicolor.🩷 Dimensiones: 18 x 27 cm de alto",
+   "precio": 63900,
+   "precio_texto": "$63.900",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-unicornio.jpg"
+  },
+  {
+   "id": "peluche-mister-alejo",
+   "nombre": "Peluche Mister Alejo",
+   "nombre_original": "Peluche Mister Alejo",
+   "descripcion": "Mister Alejo tiene todo para convertirse en el personaje más curioso de su colección. La cabeza rosada, el cuerpo negro y las patas amarillas se unen a un cuello largo con textura de escamas. Un peluche de apariencia divertida para acompañar a tu perro cuando llegue la hora de jugar. Color: Rosado y negro, con pico y patas amarillos y alas estampadas. Dimensiones: 22 x 34 cm de alto",
+   "precio": 57000,
+   "precio_texto": "$57.000",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-mister-alejo.jpg"
+  },
+  {
+   "id": "arenera-silvestre-azul",
+   "nombre": "Arenera Silvestre - Azul",
+   "nombre_original": "Arenera Silvestre - Azul",
+   "descripcion": "Amplia para tu gato y fácil de integrar en casa. Su diseño inspirado en Silvestre combina una bandeja cómoda con una apariencia limpia y minimalista, ideal para mantener su zona de higiene organizada y agradable a la vista. Color: Azul 🔵 Dimensiones: 52 x 18 x 45 cm",
+   "precio": 49400,
+   "precio_texto": "$49.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-silvestre-azul.jpg"
+  },
+  {
+   "id": "desenredador-y-corta-nudos",
+   "nombre": "Desenredador y Corta Nudos",
+   "nombre_original": "Desenredador y Corta Nudos",
+   "descripcion": "¡Despídete de los nudos y dale a tu peludito un pelaje más suave, limpio y cuidado!. El Desenredador y Corta Nudos es una herramienta práctica para facilitar el cuidado del pelaje, ayudando a deshacer y cortar nudos y enredos de manera más sencilla. Colores: Azul Amarillo Naranja",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Cepillos"
+   ],
+   "imagen": "imagenes/desenredador-y-corta-nudos.jpg"
+  },
+  {
+   "id": "peluche-conejo-alargado",
+   "nombre": "Peluche Conejo alargado",
+   "nombre_original": "Peluche Conejo alargado",
+   "descripcion": "Un conejito de orejas largas para salir de la rutina de juego. Su cuerpo alargado y acanalado contrasta con la textura de la cabeza y las patas, creando un diseño que invita a explorar. Una opción encantadora para compartir tiempo con tu perro y su nuevo compañero. Color: Café y beige con interior de las orejas azul y hocico blanco. Dimensiones: 12 x 43 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-conejo-alargado.jpg"
+  },
+  {
+   "id": "panal-para-mascotas-hembra",
+   "nombre": "Pañal para mascotas hembra",
+   "nombre_original": "Pañal para mascotas hembra",
+   "descripcion": "Una ayuda cómoda para cuidar a tu mascota y mantener la casa limpia durante su periodo de celo. Su diseño ayuda a contener las manchas y está disponible en varias tallas para encontrar el ajuste más adecuado. Tallas: XXS, XS, S, M, L y XL Precios: XXS: $17.800 XS: $20.100 S: $22.500 M: $21.600 L: $26.900 XL: $36.000",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 17800,
+   "moneda": "COP",
+   "colecciones": [
+    "Cuidado del Peludito"
+   ],
+   "imagen": "imagenes/panal-para-mascotas-hembra.jpg"
+  },
+  {
+   "id": "arenera-doble-altura-con-pala-y-portapala-rosado-claro",
+   "nombre": "Arenera doble altura con pala y portapala - Rosado Claro",
+   "nombre_original": "Arenera doble altura con pala y portapala - Rosado Claro",
+   "descripcion": "Una arenera sencilla y cómoda para acompañar sus primeros aprendizajes. La doble altura ayuda a contener mejor la arena y su formato abierto facilita el ingreso; además, viene con pala y portapala para tener todo a mano. Rosado Claro 🩷 Dimensiones: 39 x 54 x 24 cm de alto",
+   "precio": 110300,
+   "precio_texto": "$110.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-doble-altura-con-pala-y-portapala-rosado-claro.jpg"
+  },
+  {
+   "id": "peluche-osito-multicolor-firme",
+   "nombre": "Peluche Osito Multicolor Firme",
+   "nombre_original": "Peluche Osito Multicolor Firme",
+   "descripcion": "Para esos peluditos que siempre están buscando un nuevo compañero de aventuras. Este osito de material suave mezcla rayas, estampados y distintas texturas en un diseño lleno de color, ideal para animar sus momentos de juego y acompañarlo en casa. Color: Multicolor: crema, blanco, verde, azul, naranja y amarillo. Dimensiones: 11 x 18 cm de alto",
+   "precio": 27900,
+   "precio_texto": "$27.900",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Coloridos"
+   ],
+   "imagen": "imagenes/peluche-osito-multicolor-firme.jpg"
+  },
+  {
+   "id": "collar-atomic",
+   "nombre": "Collar Atomic",
+   "nombre_original": "Collar Atomic",
+   "descripcion": "Para esos paseos en los que quieres verlo cómodo, seguro y con mucho estilo. Está elaborado en tela, cuenta con detalles reflectivos y se ajusta fácilmente al cuello de perros medianos y grandes. Colores: Gris 🩶 Azul 🔵 Rojo 🔴 Rosado 🩷 Tallas: M (2 cm x 35-51 cm), L (2,5 cm x 45-66 cm) y XL (2,8 cm x 48-76 cm) Precios: M: $39.000 L: $45.900 XL: $53.100",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 39000,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-atomic.jpg"
+  },
+  {
+   "id": "peluche-conejo-multicolor",
+   "nombre": "Peluche Conejo Multicolor",
+   "nombre_original": "Peluche Conejo Multicolor",
+   "descripcion": "Sus orejas largas son una invitación a comenzar la diversión. Este conejito de material suave combina un cuerpo verde acanalado con detalles de colores y estampados diferentes, para que tu mascota tenga un compañero llamativo con el que explorar y compartir momentos de juego. Color: Multicolor: crema, blanco, verde, azul, naranja y amarillo. Dimensiones: 15 x 23,5 cm de alto",
+   "precio": 24800,
+   "precio_texto": "$24.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Coloridos"
+   ],
+   "imagen": "imagenes/peluche-conejo-multicolor.jpg"
+  },
+  {
+   "id": "lazo-doble-nudo-con-agarradera-rosado-azul",
+   "nombre": "Lazo doble nudo con agarradera Rosado-Azul",
+   "nombre_original": "Lazo doble nudo con agarradera Rosado-Azul",
+   "descripcion": "Hay juegos que se disfrutan más cuando los dos participan. Este lazo combina una agarradera, doble nudo y una pelota texturizada para compartir momentos de tirar y aflojar con tu perro. Sus 42 cm de largo te dan espacio para sujetarlo mientras él explora las distintas partes del juguete. Colores: Pelota azul o rosada, con lazo trenzado azul oscuro, celeste y rosado. Dimensiones: 42 cm de largo; pelota de 6 cm de diámetro.",
+   "precio": 22500,
+   "precio_texto": "$22.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Lazos"
+   ],
+   "imagen": "imagenes/lazo-doble-nudo-con-agarradera-rosado-azul.jpg"
+  },
+  {
+   "id": "pala-filtradora-para-arenera",
+   "nombre": "Pala Filtradora Para Arenera",
+   "nombre_original": "Pala Filtradora Para Arenera",
+   "descripcion": "Limpiar la arenera no tiene por qué tomar tanto tiempo. Sus ranuras dejan pasar la arena limpia y retienen los residuos, para que puedas mantener su espacio aseado de una forma más rápida y sencilla. Colores: Azul 🔵 Gris 🩶 Rosado 🩷 Blanco ⚪️",
+   "precio": 6600,
+   "precio_texto": "$6.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/pala-filtradora-para-arenera.jpg"
+  },
+  {
+   "id": "juguete-deluxe-para-gatos",
+   "nombre": "Juguete Deluxe para gatos",
+   "nombre_original": "Juguete Deluxe para gatos",
+   "descripcion": "Una pequeña almohadita puede convertirse en el juguete favorito de tu gato. Es ligera, fácil de atrapar y perfecta para esos momentos en los que quiere correr, cazar o simplemente entretenerse por su cuenta. Color: Blanco Dimensiones: 8 x 8 cm",
+   "precio": 8700,
+   "precio_texto": "$8.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Juguetes"
+   ],
+   "imagen": "imagenes/juguete-deluxe-para-gatos.jpg"
+  },
+  {
+   "id": "arnes-honey-durazno",
+   "nombre": "Arnés Honey - Durazno",
+   "nombre_original": "Arnés Honey - Durazno",
+   "descripcion": "Que cada paseo se sienta cómodo desde el primer paso. El arnés Honey tiene una estructura de buen grosor que brinda soporte y se adapta al cuerpo de tu mascota, con varios colores para elegir el que mejor refleje su personalidad. Color: Durazno 🍑 Tallas: XS, S, L y XL Precios: XS: $48.200 S: $57.800 L: $59.000 XL: $63.600",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 48200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arnes-honey-durazno.jpg"
+  },
+  {
+   "id": "collar-kronox-fucsia",
+   "nombre": "Collar Kronox Fucsia",
+   "nombre_original": "Collar Kronox Fucsia",
+   "descripcion": "Un collar que se hace notar desde el primer paseo. Su diseño de triángulos en relieve combina colores vivos con bordes negros, una hebilla de acabado oscuro y una placa frontal. Una opción con mucho carácter para acompañar a perros medianos y grandes. Color: Fucsia Tallas: M y L",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-kronox-fucsia.jpg"
+  },
+  {
+   "id": "portabolsas-cupcake",
+   "nombre": "Portabolsas - Cupcake",
+   "nombre_original": "Portabolsas - Cupcake",
+   "descripcion": "Las bolsas siempre estarán a mano cuando llegue el momento de usarlas. Sus divertidos diseños de cupcake convierten un accesorio necesario en un detalle con estilo para acompañar cada paseo. Colores: Azul 🔵 Verde 🟢 Rosado🩷",
+   "precio": 13600,
+   "precio_texto": "$13.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Portabolsas"
+   ],
+   "imagen": "imagenes/portabolsas-cupcake.jpg"
+  },
+  {
+   "id": "comedero-burbuja",
+   "nombre": "Comedero Burbuja",
+   "nombre_original": "Comedero Burbuja",
+   "descripcion": "Una estación de alimentación completa y con un diseño encantador. Tiene dos espacios para servir alimento y una botella dispensadora de agua tipo burbuja, así que tu mascota puede encontrar todo en el mismo lugar. Colores: Blanco Rosa Azul",
+   "precio": 75800,
+   "precio_texto": "$75.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Comederos & Bebederos"
+   ],
+   "imagen": "imagenes/comedero-burbuja.jpg"
+  },
+  {
+   "id": "transportador-rel-rosado",
+   "nombre": "Transportador REL - Rosado",
+   "nombre_original": "Transportador REL - Rosado",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Rosado 🩷 Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [
+    "Transportadores"
+   ],
+   "imagen": "imagenes/transportador-rel-rosado.jpg"
+  },
+  {
+   "id": "cepillo-deslanador-furmipets",
+   "nombre": "Cepillo Deslanador Furmipets",
+   "nombre_original": "Cepillo Deslanador Furmipets",
+   "descripcion": "Ideal para esas temporadas en las que encuentras pelo por toda la casa. Su diseño deslanador ayuda a retirar el subpelo muerto con mayor eficiencia, haciendo que la rutina de cepillado sea más cómoda para ti y para tu mascota. Colores: Negro Azul Naranja Amarillo Precios: S: $47.400 M: $56.400",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 47400,
+   "moneda": "COP",
+   "colecciones": [
+    "Cepillos"
+   ],
+   "imagen": "imagenes/cepillo-deslanador-furmipets.jpg"
+  },
+  {
+   "id": "arenera-silvestre-beige",
+   "nombre": "Arenera Silvestre - Beige",
+   "nombre_original": "Arenera Silvestre - Beige",
+   "descripcion": "Amplia para tu gato y fácil de integrar en casa. Su diseño inspirado en Silvestre combina una bandeja cómoda con una apariencia limpia y minimalista, ideal para mantener su zona de higiene organizada y agradable a la vista. Color: Beige 🤎 Dimensiones: 52 x 18 x 45 cm",
+   "precio": 49400,
+   "precio_texto": "$49.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-silvestre-beige.jpg"
+  },
+  {
+   "id": "arenera-silvestre-rojo",
+   "nombre": "Arenera Silvestre - Rojo",
+   "nombre_original": "Arenera Silvestre - Rojo",
+   "descripcion": "Amplia para tu gato y fácil de integrar en casa. Su diseño inspirado en Silvestre combina una bandeja cómoda con una apariencia limpia y minimalista, ideal para mantener su zona de higiene organizada y agradable a la vista. Color: Rojo 🔴 Dimensiones: 52 x 18 x 45 cm",
+   "precio": 49400,
+   "precio_texto": "$49.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-silvestre-rojo.jpg"
+  },
+  {
+   "id": "collar-para-gatos-minimalista",
+   "nombre": "Collar para Gatos Minimalista",
+   "nombre_original": "Collar para Gatos Minimalista",
+   "descripcion": "Con color y un estilo delicado para resaltar su lado más tierno. Está disponible en celeste y rosado, e incluye cascabel y argolla para que puedas colocar su placa de identificación. Colores: Azul Celeste 🩵 Rosado🩷",
+   "precio": 15200,
+   "precio_texto": "$15.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gatos-minimalista.jpg"
+  },
+  {
+   "id": "peluche-pato-hunter",
+   "nombre": "Peluche Pato Hunter",
+   "nombre_original": "Peluche Pato Hunter 🦆",
+   "descripcion": "Hay perros que disfrutan pasearse por toda la casa con su juguete favorito. Este pato de peluche suave tiene un cuerpo alargado, alas estampadas y una carita con detalles blancos que le dan mucho encanto. Una compañía para sus recorridos y para esos momentos en los que te invita a jugar. Color: Café y gris oscuro, con detalles blancos y negros. 🤎🩶 Dimensiones: 36,5 x 10 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Lisos"
+   ],
+   "imagen": "imagenes/peluche-pato-hunter.jpg"
+  },
+  {
+   "id": "peluche-minino",
+   "nombre": "Peluche Minino",
+   "nombre_original": "Peluche Minino",
+   "descripcion": "Un minino que también puede convertirse en el compañero favorito de tu perro. Combina un cuerpo suave con accesorios laterales texturados que invitan a explorar y jugar; su carita bordada y su diseño a rayas completan un juguete lleno de personalidad. Color: Crema y café con accesorios rojos y franjas oscuras y crema. Dimensiones: 12,5 x 12 cm",
+   "precio": 24300,
+   "precio_texto": "$24.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Pequeños"
+   ],
+   "imagen": "imagenes/peluche-minino.jpg"
+  },
+  {
+   "id": "peluche-dispensador-lemur",
+   "nombre": "Peluche dispensador Lémur",
+   "nombre_original": "Peluche dispensador Lémur 🐾",
+   "descripcion": "Su carita en blanco y negro y sus brazos abiertos lo hacen difícil de ignorar. Este lémur de peluche suave tiene un dispensador en la barriga para colocar pequeños premios y animar a tu perro a explorar. Un compañero con personalidad para renovar su rutina de juego. Color: Gris, blanco y negro, con dispensador en tono mostaza. 🩶 Dimensiones: 23 x 27 cm de alto",
+   "precio": 65500,
+   "precio_texto": "$65.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-lemur.jpg"
+  },
+  {
+   "id": "areneras-suprema",
+   "nombre": "Areneras Suprema",
+   "nombre_original": "Areneras Suprema",
+   "descripcion": "Pensada para quienes buscan funcionalidad sin descuidar la apariencia del hogar. Es cerrada, tiene entrada frontal y salida superior, y su bandeja corrediza facilita la limpieza. La pala y el portapala completan un diseño práctico y elegante. Color: Gris 🩶 Azul claro 🩵 Azul oscuro 🔵 Rosado🩷 Dimensiones: 48,5 x 38,5 x 38,2 cm de alto",
+   "precio": 189900,
+   "precio_texto": "$189.900",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/areneras-suprema.jpg"
+  },
+  {
+   "id": "juguete-interactivo-mariposa",
+   "nombre": "Juguete interactivo Mariposa",
+   "nombre_original": "Juguete interactivo Mariposa",
+   "descripcion": "A los gatos les encanta observar, perseguir y atrapar. Esta mariposa en movimiento despierta su curiosidad y lo invita a jugar mientras ejercita sus reflejos y deja salir ese cazador que lleva dentro. Color: Verde Funcionamiento: Utiliza pilas",
+   "precio": 26600,
+   "precio_texto": "$26.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Juguetes"
+   ],
+   "imagen": "imagenes/juguete-interactivo-mariposa.jpg"
+  },
+  {
+   "id": "comedero-para-perros-ansiosos-xl",
+   "nombre": "Comedero para perros ansiosos XL",
+   "nombre_original": "Comedero para perros ansiosos  XL",
+   "descripcion": "Los perros grandes también necesitan una forma más tranquila de disfrutar su comida. Su diseño amplio en forma de flor reparte el alimento en varios canales y ayuda a evitar que lo devoren todo de una sola vez. Colores: Azul Verde Blanco Morado Dimensiones: 28 x 5,6 cm",
+   "precio": 48800,
+   "precio_texto": "$48.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-para-perros-ansiosos-xl.jpg"
+  },
+  {
+   "id": "peluche-dispensador-mono",
+   "nombre": "Peluche dispensador Mono",
+   "nombre_original": "Peluche dispensador Mono 🙉",
+   "descripcion": "Con su sonrisa y su color naranja, este mono parece estar siempre listo para jugar. El cuerpo de peluche suave incluye un dispensador frontal donde puedes colocar pequeños premios, sumando una sorpresa a cada encuentro. Una compañía divertida para esos ratos en los que quieres consentir a tu perro. Color: Naranja, con rostro y orejas beige y dispensador fucsia. 🧡 Dimensiones: 23 x 27 cm de alto",
+   "precio": 56100,
+   "precio_texto": "$56.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-mono.jpg"
+  },
+  {
+   "id": "cepillo-expulsapelo-360",
+   "nombre": "Cepillo Expulsapelo 360°",
+   "nombre_original": "Cepillo Expulsapelo 360°",
+   "descripcion": "Su diseño 360° se adapta mejor a diferentes zonas del cuerpo, ayudándote a cepillar incluso los lugares menos fáciles de alcanzar. Cuando terminas, el botón expulsor libera el pelo acumulado de manera rápida y práctica. Colores: Naranja 🟠 Amarillo 🟡 Azul 🔵",
+   "precio": 50200,
+   "precio_texto": "$50.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/cepillo-expulsapelo-360.jpg"
+  },
+  {
+   "id": "arnes-honey-negro",
+   "nombre": "Arnés Honey - Negro",
+   "nombre_original": "Arnés Honey - Negro",
+   "descripcion": "Que cada paseo se sienta cómodo desde el primer paso. El arnés Honey tiene una estructura de buen grosor que brinda soporte y se adapta al cuerpo de tu mascota, con varios colores para elegir el que mejor refleje su personalidad. Color: Negro ⚫️ Tallas: XS, S, L y XL Precios: XS: $48.200 S: $57.800 L: $59.000 XL: $63.600",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 48200,
+   "moneda": "COP",
+   "colecciones": [
+    "Arneses"
+   ],
+   "imagen": "imagenes/arnes-honey-negro.jpg"
+  },
+  {
+   "id": "arnes-honey-verde",
+   "nombre": "Arnés Honey - Verde",
+   "nombre_original": "Arnés Honey - Verde",
+   "descripcion": "Que cada paseo se sienta cómodo desde el primer paso. El arnés Honey tiene una estructura de buen grosor que brinda soporte y se adapta al cuerpo de tu mascota, con varios colores para elegir el que mejor refleje su personalidad. Color: Verde 🟢 Tallas: XS, S, L y XL Precios: XS: $48.200 S: $57.800 L: $59.000 XL: $63.600",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 48200,
+   "moneda": "COP",
+   "colecciones": [
+    "Arneses"
+   ],
+   "imagen": "imagenes/arnes-honey-verde.jpg"
+  },
+  {
+   "id": "correa-collar-extreme-rojo",
+   "nombre": "Correa & Collar Extreme - Rojo",
+   "nombre_original": "Correa & Collar Extreme - Rojo",
+   "descripcion": "Un collar sencillo, resistente y con colores que se hacen notar. Está pensado para acompañar a tu perro todos los días con un ajuste cómodo y un estilo fácil de combinar. Disfruta el paseo con una correa firme, cómoda de llevar y llena de color. Su diseño sólido combina con el collar Extreme y te ayuda a mantener a tu perro cerca con mayor confianza. Color: Rojo Precios: Collar talla S: $31.200 Collar talla M: $39.800 Correa: $57.800",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 31200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/correa-collar-extreme-rojo.jpg"
+  },
+  {
+   "id": "collar-para-gatos",
+   "nombre": "Collar para Gatos",
+   "nombre_original": "Collar para Gatos",
+   "descripcion": "Las huellitas y la variedad de colores hacen que este collar se sienta alegre y fácil de combinar. Incluye cascabel y argolla para placa, para que tu gato lleve un accesorio bonito y funcional. Colores: Morado 🟣 Rojo 🔴 Azul 🔵",
+   "precio": 14100,
+   "precio_texto": "$14.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Collares para Gato"
+   ],
+   "imagen": "imagenes/collar-para-gatos.jpg"
+  },
+  {
+   "id": "collar-para-gatos-corazoncitos-azules",
+   "nombre": "Collar para gatos Corazoncitos Azules",
+   "nombre_original": "Collar para gatos Corazoncitos Azules",
+   "descripcion": "Los corazones azules le dan un toque dulce y diferente a este collar. También incluye cascabel y argolla para la placa, combinando una apariencia bonita con un detalle útil para identificarlo. Color: Azul 🔵",
+   "precio": 14100,
+   "precio_texto": "$14.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gatos-corazoncitos-azules.jpg"
+  },
+  {
+   "id": "tt-series-rocket-cat-litter-box-gris",
+   "nombre": "TT Series Rocket Cat Litter Box Gris",
+   "nombre_original": "TT Series Rocket Cat Litter Box Gris",
+   "descripcion": "Privacidad para tu gato y una limpieza más sencilla para ti. Su original diseño de cohete tiene entrada frontal, salida superior, respiraderos y bandeja corrediza; también incluye pala y portapala para mantener cada cosa en su lugar. Color: Gris Dimensiones: 56 x 51 x 39 cm",
+   "precio": 174700,
+   "precio_texto": "$174.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Areneras"
+   ],
+   "imagen": "imagenes/tt-series-rocket-cat-litter-box-gris.jpg"
+  },
+  {
+   "id": "comedero-dinastia-rosado",
+   "nombre": "Comedero Dinastía Rosado",
+   "nombre_original": "Comedero Dinastía Rosado",
+   "descripcion": "Un rincón de alimentación cómodo también puede verse bonito. Este comedero elevado tiene dos espacios y un diseño de huesito en dos tonos, pensado para acompañar sus comidas con una postura más natural y un toque especial en casa. Color: Rosado 🩷 Dimensiones: 47 x 25,4 x 20,3 cm de alto",
+   "precio": 71200,
+   "precio_texto": "$71.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-dinastia-rosado.jpg"
+  },
+  {
+   "id": "peluche-monkey-amarillo",
+   "nombre": "Peluche Monkey Amarillo",
+   "nombre_original": "Peluche Monkey Amarillo",
+   "descripcion": "Un compañero de juegos suave, llamativo y listo para acompañar muchas aventuras. Su divertida forma de mono y su tela resistente lo convierten en una buena opción para que tu mascota muerda, sacuda y se entretenga. Color: Amarillo Dimensiones: 32 x 17 cm",
+   "precio": 29800,
+   "precio_texto": "$29.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Criaturas"
+   ],
+   "imagen": "imagenes/peluche-monkey-amarillo.jpg"
+  },
+  {
+   "id": "collar-kronox-azul",
+   "nombre": "Collar Kronox Azul",
+   "nombre_original": "Collar Kronox Azul",
+   "descripcion": "Un collar que se hace notar desde el primer paseo. Su diseño de triángulos en relieve combina colores vivos con bordes negros, una hebilla de acabado oscuro y una placa frontal. Una opción con mucho carácter para acompañar a perros medianos y grandes. Color: Azul Tallas: M y L",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-kronox-azul.jpg"
+  },
+  {
+   "id": "collar-para-gatos-escarchado",
+   "nombre": "Collar para gatos Escarchado",
+   "nombre_original": "Collar para gatos Escarchado",
+   "descripcion": "Si tu gato nació para llamar la atención, un poco de brillo le quedará perfecto. Su acabado escarchado está disponible en rosado y azul, e incluye cascabel y argolla para colocar la placa. Colores: Rosado 🩷 Azul 🩵",
+   "precio": 14100,
+   "precio_texto": "$14.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Collares para Gato"
+   ],
+   "imagen": "imagenes/collar-para-gatos-escarchado.jpg"
+  },
+  {
+   "id": "arenera-doble-altura-con-pala-y-portapala-gris",
+   "nombre": "Arenera Doble Altura con Pala y Portapala - Gris",
+   "nombre_original": "Arenera Doble Altura con Pala y Portapala - Gris",
+   "descripcion": "Una arenera sencilla y cómoda para acompañar sus primeros aprendizajes. La doble altura ayuda a contener mejor la arena y su formato abierto facilita el ingreso; además, viene con pala y portapala para tener todo a mano. Gris 🩶 Dimensiones: 39 x 54 x 24 cm de alto",
+   "precio": 110300,
+   "precio_texto": "$110.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-doble-altura-con-pala-y-portapala-gris.jpg"
+  },
+  {
+   "id": "collar-para-gatos-cachaco",
+   "nombre": "Collar para Gatos Cachaco",
+   "nombre_original": "Collar para Gatos Cachaco",
+   "descripcion": "Los cuadros le dan una apariencia clásica y elegante, perfecta para un gato con mucha presencia. Está disponible en negro y celeste e incluye cascabel y argolla para colocar su placa. Colores: Negro ⚫️ Azul Celeste🩵",
+   "precio": 14100,
+   "precio_texto": "$14.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gatos-cachaco.jpg"
+  },
+  {
+   "id": "peluche-gallo-hunter",
+   "nombre": "Peluche Gallo Hunter",
+   "nombre_original": "Peluche Gallo Hunter 🐔",
+   "descripcion": "Este gallito llega con una cresta roja y mucha personalidad para animar sus ratos de juego. El cuerpo suave, las alas estampadas en blanco y negro y las pequeñas patas crean un diseño que llama la atención. Perfecto para darle un nuevo protagonista a las aventuras que comparten en casa. Color: Blanco, rojo y negro, con pico amarillo y patas anaranjadas.🔴⚪️ Dimensiones: 36,5 x 10 cm de alto",
+   "precio": 40700,
+   "precio_texto": "$40.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Lisos"
+   ],
+   "imagen": "imagenes/peluche-gallo-hunter.jpg"
+  },
+  {
+   "id": "arena-ecologica-de-tofu",
+   "nombre": "Arena Ecológica de Tofu",
+   "nombre_original": "Arena Ecológica de Tofu",
+   "descripcion": "Una opción de origen vegetal para cuidar la higiene de tu gato de manera práctica. Su fórmula de tofu tiene alta capacidad de absorción y se desintegra al contacto con el agua; para desecharla, sigue las indicaciones del empaque y de tu sistema sanitario. Presentaciones: Manzana 🍎 Durazno 🍑 Contenido: 2,4 kg",
+   "precio": 29900,
+   "precio_texto": "$29.900",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Cuidado del Peludito"
+   ],
+   "imagen": "imagenes/arena-ecologica-de-tofu.jpg"
+  },
+  {
+   "id": "collar-para-gato-corazones",
+   "nombre": "Collar para Gato Corazones",
+   "nombre_original": "Collar para Gato Corazones",
+   "descripcion": "Su estampado floral en tono celeste tiene una apariencia fresca y delicada que le quedará encantadora. Además, viene con cascabel y argolla para añadir la placa de identificación. Color: Rosado celeste 🩷",
+   "precio": 14800,
+   "precio_texto": "$14.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gato-corazones.jpg"
+  },
+  {
+   "id": "arenera-tom-amarillo",
+   "nombre": "Arenera Tom - Amarillo",
+   "nombre_original": "Arenera Tom - Amarillo",
+   "descripcion": "La hora de usar la arenera también puede tener estilo. Este modelo inspirado en Tom y Jerry tiene líneas sencillas, un acabado pulido y el tamaño apropiado para crear un rincón cómodo para tu gato sin recargar el espacio. Color: Amarillo 🟡 Dimensiones: 38 x 13 x 36 cm",
+   "precio": 61600,
+   "precio_texto": "$61.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Areneras"
+   ],
+   "imagen": "imagenes/arenera-tom-amarillo.jpg"
+  },
+  {
+   "id": "peluche-monkey-azul",
+   "nombre": "Peluche Monkey Azul",
+   "nombre_original": "Peluche Monkey Azul",
+   "descripcion": "Un compañero de juegos suave, llamativo y listo para acompañar muchas aventuras. Su divertida forma de mono y su tela resistente lo convierten en una buena opción para que tu mascota muerda, sacuda y se entretenga. Color: Azul Dimensiones: 32 x 17 cm",
+   "precio": 29800,
+   "precio_texto": "$29.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Criaturas"
+   ],
+   "imagen": "imagenes/peluche-monkey-azul.jpg"
+  },
+  {
+   "id": "arenera-titanic-azul",
+   "nombre": "Arenera Titanic - Azul",
+   "nombre_original": "Arenera Titanic - Azul",
+   "descripcion": "Su formato compacto aprovecha muy bien el espacio sin renunciar a la comodidad de tu gato. Cuenta con entrada frontal, salida superior, respiraderos y bandeja corrediza, detalles que hacen mucho más llevadera la limpieza diaria. Color: Azul 🔵 Dimensiones: 51,2 x 38,5 x 40,9 cm de alto",
+   "precio": 182500,
+   "precio_texto": "$182.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-titanic-azul.jpg"
+  },
+  {
+   "id": "huesos-magic-bones",
+   "nombre": "Huesos Magic Bones",
+   "nombre_original": "Huesos Magic Bones",
+   "descripcion": "Un premio sabroso siempre es una bonita forma de consentirlo. Los Magic Bones vienen en sabores leche, carne y pollo, y en varias presentaciones para que elijas la más conveniente. Ofrécelos según su tamaño y siempre bajo supervisión. Sabores: Leche, carne y pollo Presentaciones: 4 y 24 huesos Precios: Paquete de 4 huesos: $13.200 Paquete de 24 huesos:",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 13200,
+   "moneda": "COP",
+   "colecciones": [
+    "Premios & Alimentación"
+   ],
+   "imagen": "imagenes/huesos-magic-bones.jpg"
+  },
+  {
+   "id": "lazo-doble-nudo-con-agarradera-azul-rosado",
+   "nombre": "Lazo doble nudo con agarradera Azul-Rosado",
+   "nombre_original": "Lazo doble nudo con agarradera Azul-Rosado",
+   "descripcion": "Hay juegos que se disfrutan más cuando los dos participan. Este lazo combina una agarradera, doble nudo y una pelota texturizada para compartir momentos de tirar y aflojar con tu perro. Sus 42 cm de largo te dan espacio para sujetarlo mientras él explora las distintas partes del juguete. Colores: Pelota azul o rosada, con lazo trenzado azul oscuro, celeste y rosado. Dimensiones: 42 cm de largo; pelota de 6 cm de diámetro.",
+   "precio": 22500,
+   "precio_texto": "$22.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/lazo-doble-nudo-con-agarradera-azul-rosado.jpg"
+  },
+  {
+   "id": "arenera-max-2-en-1",
+   "nombre": "Arenera Max 2 en 1",
+   "nombre_original": "Arenera Max 2 en 1",
+   "descripcion": "Un diseño versátil que se adapta a distintos momentos del día. Puedes usarla como arenera y, cuando quieras convertirla en un lugar de descanso, colocar el cojín premium incluido para crear una cama cómoda para tu gato. Beige 🤎 Dimensiones: 64 x 42 x 33 cm de alto",
+   "precio": 138600,
+   "precio_texto": "$138.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-max-2-en-1.jpg"
+  },
+  {
+   "id": "arenera-titanic-rosado",
+   "nombre": "Arenera Titanic - Rosado",
+   "nombre_original": "Arenera Titanic - Rosado",
+   "descripcion": "Su formato compacto aprovecha muy bien el espacio sin renunciar a la comodidad de tu gato. Cuenta con entrada frontal, salida superior, respiraderos y bandeja corrediza, detalles que hacen mucho más llevadera la limpieza diaria. Color: Rosado 🩷 Dimensiones: 51,2 x 38,5 x 40,9 cm de alto",
+   "precio": 182500,
+   "precio_texto": "$182.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-titanic-rosado.jpg"
+  },
+  {
+   "id": "peluche-osito-multicolor-sentado",
+   "nombre": "Peluche Osito Multicolor Sentado",
+   "nombre_original": "Peluche Osito Multicolor Sentado",
+   "descripcion": "Hay compañeros de juego que conquistan desde la primera mirada. Este osito sentado combina un cuerpo verde acanalado con brazos y patas de distintos estampados. Su material suave y su expresión tierna lo hacen perfecto para consentir a tu mascota con algo especial. Color: Multicolor: crema, blanco, verde, azul, naranja y amarillo. Dimensiones: 16 x 19,5 cm de alto",
+   "precio": 30800,
+   "precio_texto": "$30.800",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Coloridos"
+   ],
+   "imagen": "imagenes/peluche-osito-multicolor-sentado.jpg"
+  },
+  {
+   "id": "collar-kronox-turquesa",
+   "nombre": "Collar Kronox Turquesa",
+   "nombre_original": "Collar Kronox Turquesa",
+   "descripcion": "Un collar que se hace notar desde el primer paseo. Su diseño de triángulos en relieve combina colores vivos con bordes negros, una hebilla de acabado oscuro y una placa frontal. Una opción con mucho carácter para acompañar a perros medianos y grandes. Color: Turquesa Tallas: M y L",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-kronox-turquesa.jpg"
+  },
+  {
+   "id": "comedero-romance",
+   "nombre": "Comedero Romance",
+   "nombre_original": "Comedero Romance",
+   "descripcion": "Todo lo que necesita para comer y beber, reunido en un solo lugar. Su diseño elevado incorpora un espacio para el alimento y una botella dispensadora de agua, ayudándote a mantener su rincón más cómodo y organizado. Colores: Gris Verde Rosa Presentación: Única y desarmable",
+   "precio": 63600,
+   "precio_texto": "$63.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Comederos & Bebederos"
+   ],
+   "imagen": "imagenes/comedero-romance.jpg"
+  },
+  {
+   "id": "lazo-con-pelota-mediana-azul",
+   "nombre": "Lazo con pelota mediana Azul",
+   "nombre_original": "Lazo con pelota mediana Azul",
+   "descripcion": "Cuando te trae un juguete para pedirte que juegues, este lazo tiene todo para empezar. Combina una cuerda trenzada con nudos, flecos en los extremos y una pelota texturizada en el centro. Una forma sencilla de compartir juegos de tirar y aflojar y hacer más entretenido el tiempo juntos. Colores: Pelota azul, con lazo trenzado azul oscuro, celeste y rosado. Dimensiones: 28 cm de largo; pelota de 6 cm de diámetro.",
+   "precio": 18000,
+   "precio_texto": "$18.000",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/lazo-con-pelota-mediana-azul.jpg"
+  },
+  {
+   "id": "arenera-tom-rojo",
+   "nombre": "Arenera Tom - Rojo",
+   "nombre_original": "Arenera Tom - Rojo",
+   "descripcion": "La hora de usar la arenera también puede tener estilo. Este modelo inspirado en Tom y Jerry tiene líneas sencillas, un acabado pulido y el tamaño apropiado para crear un rincón cómodo para tu gato sin recargar el espacio. Color: Rojo 🔴 Dimensiones: 38 x 13 x 36 cm",
+   "precio": 61600,
+   "precio_texto": "$61.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-tom-rojo.jpg"
+  },
+  {
+   "id": "lazo-con-pelota-mediana-rosada",
+   "nombre": "Lazo con pelota mediana Rosada",
+   "nombre_original": "Lazo con pelota mediana Rosada",
+   "descripcion": "Cuando te trae un juguete para pedirte que juegues, este lazo tiene todo para empezar. Combina una cuerda trenzada con nudos, flecos en los extremos y una pelota texturizada en el centro. Una forma sencilla de compartir juegos de tirar y aflojar y hacer más entretenido el tiempo juntos. Colores: Pelota azul o rosada, con lazo trenzado azul oscuro, celeste y rosado. Dimensiones: 28 cm de largo; pelota de 6 cm de diámetro.",
+   "precio": 18000,
+   "precio_texto": "$18.000",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/lazo-con-pelota-mediana-rosada.jpg"
+  },
+  {
+   "id": "peluche-ciclope-naranja",
+   "nombre": "Peluche Cíclope Naranja",
+   "nombre_original": "Peluche Cíclope Naranja",
+   "descripcion": "Texturas diferentes hacen que el juego sea mucho más interesante. Este peluche combina tela con un anillo de goma para mordisquear, ofreciéndole a tu mascota otra forma de explorar, jugar y mantenerse entretenida. Color: Naranja Dimensiones: 27 cm",
+   "precio": 42900,
+   "precio_texto": "$42.900",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-ciclope-naranja.jpg"
+  },
+  {
+   "id": "transportador-rel-camuflado",
+   "nombre": "Transportador REL - Camuflado",
+   "nombre_original": "Transportador REL - Camuflado",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Camuflado 🤎🟢 Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/transportador-rel-camuflado.jpg"
+  },
+  {
+   "id": "toallas-de-entrenamiento",
+   "nombre": "Toallas de Entrenamiento",
+   "nombre_original": "Toallas de Entrenamiento",
+   "descripcion": "Aprender dónde hacer sus necesidades toma tiempo, paciencia y buenos aliados. Estas toallas súper absorbentes ayudan a concentrar la humedad en un mismo lugar y hacen que el proceso de entrenamiento sea más limpio para todos. Contenido: 10 unidades",
+   "precio": 24300,
+   "precio_texto": "$24.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/toallas-de-entrenamiento.jpg"
+  },
+  {
+   "id": "peluche-yogui",
+   "nombre": "Peluche Yogui",
+   "nombre_original": "Peluche Yogui",
+   "descripcion": "Un osito con mucho encanto para acompañar sus ratos de juego. Su material suave y sus accesorios laterales texturados le ofrecen distintas sensaciones para explorar, mientras su diseño con camiseta a rayas lo convierte en un compañero difícil de pasar por alto. Color: Café caramelo con detalles azules y franjas azul oscuro y blanco. Dimensiones: 12,5 x 12 cm",
+   "precio": 24300,
+   "precio_texto": "$24.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Pequeños"
+   ],
+   "imagen": "imagenes/peluche-yogui.jpg"
+  },
+  {
+   "id": "comedero-4-paticas",
+   "nombre": "Comedero 4 Paticas",
+   "nombre_original": "Comedero 4 Paticas",
+   "descripcion": "Bonito, estable y muy fácil de limpiar. Su base antideslizante ayuda a que permanezca en su lugar, mientras el recipiente desmontable de acero inoxidable hace más sencilla la tarea de servir y lavar después de cada comida. Colores: Blanco ⚪️ Rosa 🩷 Verde 🟢",
+   "precio": 61000,
+   "precio_texto": "$61.000",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-4-paticas.jpg"
+  },
+  {
+   "id": "collar-para-gato-flores",
+   "nombre": "Collar para Gato Flores",
+   "nombre_original": "Collar para Gato Flores",
+   "descripcion": "Las flores en tonos morados crean un diseño delicado y elegante que resalta sin ser exagerado. Incluye cascabel y argolla para que puedas completar el collar con su placa de identificación. Color: Azul 🔵",
+   "precio": 15200,
+   "precio_texto": "$15.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/collar-para-gato-flores.jpg"
+  },
+  {
+   "id": "dispensador-de-alimentos-con-medidor",
+   "nombre": "Dispensador de alimentos con medidor",
+   "nombre_original": "Dispensador de alimentos con medidor",
+   "descripcion": "Servir la cantidad adecuada resulta mucho más sencillo cuando puedes verla y medirla. El recipiente transparente te permite controlar el contenido, y su vaso medidor ayuda a preparar cada porción con mayor precisión. Color: Transparente",
+   "precio": 33100,
+   "precio_texto": "$33.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Premios & Alimentación"
+   ],
+   "imagen": "imagenes/dispensador-de-alimentos-con-medidor.jpg"
+  },
+  {
+   "id": "juguete-sandia-en-tpr",
+   "nombre": "Juguete Sandía en TPR",
+   "nombre_original": "Juguete Sandía en TPR",
+   "descripcion": "Esta tajada de sandía pone color y sonido en sus momentos de juego. El diseño en TPR combina pequeños relieves con bordes texturizados e incluye pito para mantener su atención. Puedes congelarla y sumar una sensación diferente a la diversión. Color: Rojo y verde. Dimensiones: 11,5 cm",
+   "precio": 14400,
+   "precio_texto": "$14.400",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Juguetes en TPR"
+   ],
+   "imagen": "imagenes/juguete-sandia-en-tpr.jpg"
+  },
+  {
+   "id": "peluche-dispensador-koala",
+   "nombre": "Peluche dispensador Koala",
+   "nombre_original": "Peluche dispensador Koala 🐨",
+   "descripcion": "Las orejas esponjosas y la gran nariz de este koala conquistan a primera vista. Además de su cuerpo suave, tiene un dispensador en la barriga donde puedes colocar pequeños premios. Una forma de sumar curiosidad a sus ratos de juego y consentirlo con un compañero especial. Color: Gris claro y blanco, con nariz negra y dispensador azul 🩶 Dimensiones: 23 x 27 cm de alto",
+   "precio": 56100,
+   "precio_texto": "$56.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-koala.jpg"
+  },
+  {
+   "id": "lazo-nudo-verdugo-morado",
+   "nombre": "Lazo nudo Verdugo Morado",
+   "nombre_original": "Lazo nudo Verdugo Morado",
+   "descripcion": "Sujeta el aro del lazo y deja que comience ese juego que tanto disfruta contigo. Su trenzado forma un nudo alargado y termina en una pelota con aberturas y relieves, reuniendo distintas texturas en un mismo juguete. Una invitación a compartir un rato de movimiento y atención. Colores: Pelota morada con lazo morado, rosado y blanco Dimensiones: 33 cm de largo; pelota de 6 cm de diámetro.",
+   "precio": 20700,
+   "precio_texto": "$20.700",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Lazos"
+   ],
+   "imagen": "imagenes/lazo-nudo-verdugo-morado.jpg"
+  },
+  {
+   "id": "comedero-dinastia-azul",
+   "nombre": "Comedero Dinastía Azul",
+   "nombre_original": "Comedero Dinastía Azul",
+   "descripcion": "Un rincón de alimentación cómodo también puede verse bonito. Este comedero elevado tiene dos espacios y un diseño de huesito en dos tonos, pensado para acompañar sus comidas con una postura más natural y un toque especial en casa. Color: Azul 🔵 Dimensiones: 47 x 25,4 x 20,3 cm de alto",
+   "precio": 71200,
+   "precio_texto": "$71.200",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/comedero-dinastia-azul.jpg"
+  },
+  {
+   "id": "correa-collar-extreme-solida-rosada",
+   "nombre": "Correa & Collar Extreme Sólida Rosada",
+   "nombre_original": "Correa & Collar Extreme Sólida Rosada",
+   "descripcion": "Correa + collar Extreme Sólida Rosado Un collar sencillo, resistente y con colores que se hacen notar. Está pensado para acompañar a tu perro todos los días con un ajuste cómodo y un estilo fácil de combinar. Disfruta el paseo con una correa firme, cómoda de llevar y llena de color. Su diseño sólido combina con el collar Extreme y te ayuda a mantener a tu perro cerca con mayor confianza. Color: Rojo Precios: Collar talla S: $31.200 Collar talla M: $39.800 Correa: $57.800",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 31200,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/correa-collar-extreme-solida-rosada.jpg"
+  },
+  {
+   "id": "peluche-paloma-hunter",
+   "nombre": "Peluche Paloma Hunter",
+   "nombre_original": "Peluche Paloma Hunter 🐦",
+   "descripcion": "Para tu perro, una paloma de peluche puede ser el comienzo de un gran juego. Su cuerpo suave y alargado se acompaña de alas con estampado de plumas y pequeñas patas rosadas. Un diseño diferente para invitarlo a buscar su juguete y disfrutar un rato contigo. Color: Gris y azul claro, con alas blancas y negras y patas rosadas.⬜️ Dimensiones: 36,5 x 10 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-paloma-hunter.jpg"
+  },
+  {
+   "id": "peluche-coco-pet",
+   "nombre": "Peluche Coco-pet",
+   "nombre_original": "Peluche Coco-pet 🐊",
+   "descripcion": "Un cocodrilo simpático para darle más variedad a sus juegos. Su cuerpo largo combina peluche suave con una zona amarilla de relieves marcados, mientras la cola y las pequeñas patas completan el diseño. Sus 54 cm lo convierten en un compañero que difícilmente pasará desapercibido en casa. Color: Verde, con una zona amarilla en relieve y detalles blancos. Dimensiones: 20 x 54 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-coco-pet.jpg"
+  },
+  {
+   "id": "peluche-zorro-alargado",
+   "nombre": "Peluche Zorro alargado",
+   "nombre_original": "Peluche Zorro alargado",
+   "descripcion": "Si tu perro aparece con un juguete en la boca para pedirte atención, este zorro puede convertirse en su nueva invitación a jugar. Tiene un cuerpo largo y acanalado, orejas grandes y una cola con punta blanca que le dan un aspecto simpático y lleno de movimiento. Color: Naranja y café caramelo, con detalles blancos y negros. Dimensiones: 12 x 49,5 cm de alto",
+   "precio": 46500,
+   "precio_texto": "$46.500",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-zorro-alargado.jpg"
+  },
+  {
+   "id": "arenera-doble-altura-con-pala-y-portapala-rosado-oscuro",
+   "nombre": "Arenera doble altura con pala y portapala - Rosado oscuro",
+   "nombre_original": "Arenera doble altura con pala y portapala - Rosado oscuro",
+   "descripcion": "Una arenera sencilla y cómoda para acompañar sus primeros aprendizajes. La doble altura ayuda a contener mejor la arena y su formato abierto facilita el ingreso; además, viene con pala y portapala para tener todo a mano. Rosado Oscuro 🩷 Dimensiones: 39 x 54 x 24 cm de alto",
+   "precio": 110300,
+   "precio_texto": "$110.300",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-doble-altura-con-pala-y-portapala-rosado-oscuro.jpg"
+  },
+  {
+   "id": "transportador-rel-morado",
+   "nombre": "Transportador REL - Morado",
+   "nombre_original": "Transportador REL - Morado",
+   "descripcion": "Llevar a tu mascota contigo puede ser mucho más cómodo. Este transportador de tela tiene malla para favorecer la ventilación, bolsillo lateral y correa ajustable con almohadilla removible; los detalles reflectivos aportan un toque práctico durante el recorrido. Color: Morado 🟣 Tamaños: S (44 x 20 x 27 cm) y L (56 x 26 x 33 cm) Precios: S: $73.500 L: $91.900",
+   "precio": null,
+   "precio_texto": null,
+   "precio_desde": 73500,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/transportador-rel-morado.jpg"
+  },
+  {
+   "id": "peluche-ciclope-azul",
+   "nombre": "Peluche Cíclope Azul",
+   "nombre_original": "Peluche Cíclope Azul",
+   "descripcion": "Texturas diferentes hacen que el juego sea mucho más interesante. Este peluche combina tela con un anillo de goma para mordisquear, ofreciéndole a tu mascota otra forma de explorar, jugar y mantenerse entretenida. Color: Azul Dimensiones: 27 cm",
+   "precio": 42900,
+   "precio_texto": "$42.900",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/peluche-ciclope-azul.jpg"
+  },
+  {
+   "id": "peluche-dispensador-perezoso",
+   "nombre": "Peluche dispensador Perezoso",
+   "nombre_original": "Peluche dispensador Perezoso 🦥",
+   "descripcion": "Este perezoso tiene una expresión tranquila y una barriga que despierta la curiosidad. Su cuerpo suave incorpora un dispensador para colocar premios y darle a tu perro algo más por descubrir durante el juego. Una mezcla de ternura y diversión para acompañar sus momentos en casa. Color: Naranja, con rostro y orejas beige y dispensador fucsia 🟠 Dimensiones: 23 x 27 cm de alto",
+   "precio": 56100,
+   "precio_texto": "$56.100",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [
+    "Peluches Dispensador"
+   ],
+   "imagen": "imagenes/peluche-dispensador-perezoso.jpg"
+  },
+  {
+   "id": "arenera-tom-azul",
+   "nombre": "Arenera Tom - Azul",
+   "nombre_original": "Arenera Tom - Azul",
+   "descripcion": "La hora de usar la arenera también puede tener estilo. Este modelo inspirado en Tom y Jerry tiene líneas sencillas, un acabado pulido y el tamaño apropiado para crear un rincón cómodo para tu gato sin recargar el espacio. Color: Azul 🔵 Dimensiones: 38 x 13 x 36 cm",
+   "precio": 61600,
+   "precio_texto": "$61.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/arenera-tom-azul.jpg"
+  },
+  {
+   "id": "bebedero-fuente-sweet",
+   "nombre": "Bebedero Fuente Sweet",
+   "nombre_original": "Bebedero Fuente Sweet",
+   "descripcion": "El agua en movimiento suele despertar su curiosidad y animarla a beber. La fuente Sweet tiene un flujo silencioso y doble filtro, ayudando a mantener el agua en circulación y con una sensación fresca durante el día. Color: Verde 🟢",
+   "precio": 156600,
+   "precio_texto": "$156.600",
+   "precio_desde": null,
+   "moneda": "COP",
+   "colecciones": [],
+   "imagen": "imagenes/bebedero-fuente-sweet.jpg"
+  }
+ ]
+}
