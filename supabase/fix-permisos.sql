@@ -4,7 +4,7 @@ grant usage on schema public to anon, authenticated;
 grant select on public.categories, public.products, public.product_images, public.product_variants, public.site_content to anon, authenticated;
 grant insert, update, delete on public.categories, public.products, public.product_images, public.product_variants, public.site_content to authenticated;
 
--- Verificación: debería mostrar 25 categorías, 123 productos, >=123 fotos, ~180 tallas, 38 textos y el bucket público.
+-- Verificación: debería mostrar 27 categorías, 123 productos, 123 fotos, 174 tallas, 38 textos y el bucket en 1.
 select 'categorias' as tabla, count(*) from public.categories
 union all select 'productos', count(*) from public.products
 union all select 'fotos', count(*) from public.product_images
