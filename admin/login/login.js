@@ -32,8 +32,9 @@ function loginForm() {
   $("#forgot").onclick = async () => {
     const email = $("#email").value.trim();
     if (!email) return ($("#err").textContent = "Escribe tu correo arriba y vuelve a pulsar «¿Olvidaste tu contraseña?».");
-    const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: location.origin + "/admin/login/" });
-    error ? toast(error.message, "err") : toast(`Si ${email} tiene cuenta, te llegará un correo para crear una contraseña nueva.`);
+    const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: location.origin + "/admin/login/?reset=1" });
+    if (error) return toast(/rate limit/i.test(error.message) ? "Se enviaron demasiados correos en poco tiempo. Espera una hora e intenta de nuevo, o pide al administrador que te asigne una contraseña." : error.message, "err");
+    toast(`Si ${email} tiene cuenta, te llegará un correo para crear una contraseña nueva.`);
   };
 }
 
@@ -47,16 +48,20 @@ function newPasswordForm() {
     busy($("#go"), true);
     const { error } = await supabase.auth.updateUser({ password });
     if (error) { busy($("#go"), false, "Guardar contraseña"); $("#err").textContent = esc(error.message); return; }
-    toast("Contraseña actualizada."); setTimeout(goNext, 800);
+    toast("Contraseña actualizada."); setTimeout(() => location.replace("/admin/productos/"), 800);
   };
 }
 
 if (!supabase) card("Falta configurar Supabase", "Crea el archivo .env a partir de .env.example.", "");
 else {
-  let recovering = false;
-  supabase.auth.onAuthStateChange((ev) => { if (ev === "PASSWORD_RECOVERY") { recovering = true; newPasswordForm(); } });
+  // supabase-js borra el #hash del enlace al procesarlo; ?reset=1 (lo ponemos en redirectTo) sobrevive y nos dice que viene del correo.
+  const fromEmail = new URLSearchParams(location.search).has("reset") || /type=recovery/.test(location.hash);
+  const linkError = new URLSearchParams(location.hash.slice(1)).get("error_code");
   const { data: { session } } = await supabase.auth.getSession();
-  if (recovering || /type=recovery/.test(location.hash)) newPasswordForm();
+  if (fromEmail && session) newPasswordForm();
   else if (session) goNext();
-  else loginForm();
+  else {
+    loginForm();
+    if (fromEmail || linkError) $("#err").textContent = "El enlace del correo expiró o ya se usó. Pide uno nuevo con «¿Olvidaste tu contraseña?».";
+  }
 }

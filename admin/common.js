@@ -13,7 +13,7 @@ const PATHS = {
   star: '<path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>', edit: '<path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
   out: '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>', ext: '<path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
   img: '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>', x: '<path d="M18 6 6 18M6 6l12 12"/>',
-  check: '<path d="M20 6 9 17l-5-5"/>', alert: '<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>', key: '<circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/>', alert: '<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>',
 };
 export const icon = (n) => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${PATHS[n]}</svg>`;
 export const spinner = '<span class="spin" aria-hidden="true"></span>';
@@ -59,11 +59,36 @@ export async function requireSession(active) {
     <a href="/admin/productos/" class="abar__logo"><img src="/assets/logo-dogker.png" alt="Dögker" width="96" height="41"><span>Panel</span></a>
     <nav class="abar__nav">${links.map(([k, l]) => `<a href="/admin/${k}/" ${k === active ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</nav>
     <div class="abar__end"><a href="/" target="_blank" rel="noopener" class="abtn abtn--ghost">${icon("ext")}<span class="hide-sm">Ver tienda</span></a>
+      <button class="abtn abtn--ghost" id="pwd" title="Cambiar contraseña">${icon("key")}<span class="hide-sm">Contraseña</span></button>
       <button class="abtn abtn--ghost" id="logout" title="${esc(session.user.email)}">${icon("out")}<span class="hide-sm">Salir</span></button></div>
   </div></header>`);
   $("#logout").onclick = async () => { await supabase.auth.signOut(); location.replace("/admin/login/"); };
+  $("#pwd").onclick = () => changePassword(session.user.email);
   document.body.classList.remove("booting");
   return session;
+}
+
+// Cambiar la contraseña con la sesión abierta: no depende del correo (el SMTP gratuito de Supabase tiene límite por hora).
+function changePassword(email) {
+  const d = document.createElement("dialog"); d.className = "adialog";
+  d.innerHTML = `<form method="dialog" id="pf"><h3>Cambiar contraseña</h3><p class="muted">${esc(email)}</p>
+    <label class="field"><span>Nueva contraseña</span><input type="password" id="p1" autocomplete="new-password" minlength="8" required></label>
+    <label class="field"><span>Repítela</span><input type="password" id="p2" autocomplete="new-password" minlength="8" required></label>
+    <p class="err" id="perr" role="alert"></p>
+    <div class="adialog__row"><button type="button" class="abtn" id="pc">Cancelar</button><button class="abtn abtn--primary" id="ps">Guardar</button></div></form>`;
+  document.body.append(d); d.showModal();
+  d.onclose = () => d.remove();
+  $("#pc", d).onclick = () => d.close();
+  $("#pf", d).onsubmit = async (e) => {
+    e.preventDefault();
+    const p1 = $("#p1", d).value, p2 = $("#p2", d).value, err = $("#perr", d), btn = $("#ps", d);
+    if (p1.length < 8) return (err.textContent = "Usa al menos 8 caracteres.");
+    if (p1 !== p2) return (err.textContent = "Las dos contraseñas no coinciden.");
+    btn.disabled = true; btn.innerHTML = `${spinner} Guardando…`;
+    const { error } = await supabase.auth.updateUser({ password: p1 });
+    if (error) { btn.disabled = false; btn.textContent = "Guardar"; err.textContent = /reauthentication|recent/i.test(error.message) ? "Por seguridad, sal y vuelve a ingresar antes de cambiarla." : /different|same/i.test(error.message) ? "La nueva contraseña debe ser distinta a la actual." : errMsg(error); return; }
+    d.close(); toast("Contraseña actualizada.");
+  };
 }
 
 /* ---------- precios COP ---------- */
