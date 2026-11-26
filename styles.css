@@ -39,13 +39,17 @@ h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;le
 .cart-btn{white-space:nowrap;margin-left:auto;display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 6px 0 12px;border-radius:999px;border:0;background:var(--ink);color:#fff;font-weight:600}
 .cart-btn .count{min-width:30px;height:30px;border-radius:999px;background:var(--red);display:grid;place-items:center;font-size:13px}
 .only-desktop{display:none}
+.header__end{display:contents} /* en móvil el buscador y el botón siguen el flujo del header */
 @media (min-width:1024px){
   :root{--gut:80px}
   .only-mobile{display:none}.only-desktop{display:inline}
-  .header__row{min-height:88px;flex-wrap:nowrap;padding:0 var(--gut)}
+  /* 3 columnas iguales: el menú queda en el centro real de la página */
+  .header__row{min-height:88px;padding:0 var(--gut);display:grid;grid-template-columns:minmax(150px,1fr) auto minmax(330px,1fr);gap:24px}
+  .logo{justify-self:start}
   .logo img{width:150px}
-  .nav{display:flex;gap:22px;margin-left:20px}
-  .search{order:0;flex:0 1 280px;margin-left:auto;min-width:180px}
+  .nav{display:flex;gap:28px}
+  .header__end{display:flex;justify-content:flex-end;align-items:center;gap:12px}
+  .search{order:0;flex:0 1 280px;min-width:160px}
   .cart-btn{margin-left:0;padding-left:18px}
 }
 .nav.open{display:flex;flex-direction:column;flex-basis:100%;order:6;gap:2px;padding:8px 0}
@@ -83,6 +87,9 @@ h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;le
 .cf input,.cf select,.cf textarea{font:inherit;font-weight:400;font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
 .cf input:focus,.cf select:focus,.cf textarea:focus{outline:none;border-color:var(--ink)}
 .credit a{font-weight:600;color:var(--red-press)}
+.social{display:flex;gap:10px;margin-top:16px}
+.social a{width:44px;height:44px;border-radius:999px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;color:var(--red);transition:background-color .15s var(--ease),color .15s var(--ease)}
+.social a:hover{background:var(--red);color:#fff}
 
 /* buttons, chips */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;border:1.5px solid transparent;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s var(--ease),background-color .15s var(--ease)}

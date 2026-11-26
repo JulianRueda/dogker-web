@@ -27,15 +27,17 @@
       </button>
       <a href="#/" class="logo" aria-label="Dögker, inicio"><img src="/assets/logo-dogker.png" alt="Dögker" width="150" height="64"></a>
       <nav class="nav" id="mainNav" aria-label="Menú principal"></nav>
-      <form class="search" id="searchForm" role="search">
-        <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
-        <label class="sr" for="q">Buscar productos</label>
-        <input id="q" type="search" placeholder="Buscar" autocomplete="off">
-      </form>
-      <button class="cart-btn" id="cartBtn" aria-label="Abrir Mi pedido">
-        <svg class="ic"><use href="#i-bag"/></svg><span class="only-desktop">Mi pedido</span>
-        <span class="count" id="cartCount" aria-live="polite">0</span>
-      </button>
+      <div class="header__end">
+        <form class="search" id="searchForm" role="search">
+          <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+          <label class="sr" for="q">Buscar productos</label>
+          <input id="q" type="search" placeholder="Buscar" autocomplete="off">
+        </form>
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir Mi pedido">
+          <svg class="ic"><use href="#i-bag"/></svg><span class="only-desktop">Mi pedido</span>
+          <span class="count" id="cartCount" aria-live="polite">0</span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -46,12 +48,13 @@
       <div>
         <img src="/assets/logo-dogker.png" alt="Dögker" width="180" height="77">
         <p class="muted" data-c="footer_about"></p>
+        <div class="social" id="footSocial" aria-label="Redes sociales"></div>
       </div>
       <div><h3>Tienda</h3><ul id="footCats"></ul></div>
       <div><h3>Ayuda</h3><ul>
         <li><a href="#/info/como-pedir">Cómo pedir</a></li>
         <li><a href="#/info/entregas">Entregas y horarios</a></li>
-        <li><a href="#/contacto">Contáctenos</a></li>
+        <li><a href="#/contacto">Contáctanos</a></li>
       </ul></div>
       <div><h3>Legal</h3><ul>
         <li><a href="#/info/terminos">Términos y condiciones</a></li>
@@ -105,6 +108,8 @@
       <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
       <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.6 2.4 4.4 5 4.6"/></symbol>
+      <symbol id="i-fb" viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></symbol>
       <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
     </defs>
   </svg>

@@ -21,6 +21,17 @@ function paintStatic() {
   $("#footWa").href = `https://wa.me/${t("whatsapp_number")}`;
   const ig = $("#footIg"); ig.href = `https://www.instagram.com/${t("instagram_user")}/`; ig.textContent = "@" + t("instagram_user");
   DK.WA_NUMBER = t("whatsapp_number");
+  $("#footSocial").innerHTML = socials().map(([href, ic, name]) => `<a href="${esc(href)}" target="_blank" rel="noopener" aria-label="${name}" title="${name}">${icon(ic)}</a>`).join("");
+}
+// Redes con valor en el panel (TikTok y Facebook aparecen solo si el cliente las llena).
+function socials() {
+  const tk = t("tiktok_user").replace(/^@/, "").trim(), fb = t("facebook_url").trim();
+  return [
+    [`https://www.instagram.com/${t("instagram_user")}/`, "ig", "Instagram"],
+    [`https://wa.me/${t("whatsapp_number")}`, "wa", "WhatsApp"],
+    tk && [`https://www.tiktok.com/@${tk}`, "tiktok", "TikTok"],
+    /^https?:\/\//.test(fb) && [fb, "fb", "Facebook"],
+  ].filter(Boolean);
 }
 paintStatic();
 
@@ -67,13 +78,13 @@ async function boot() {
     P.forEach((p) => { BY[p.id] = p; (GROUPS[p._col + "|" + p._base] ||= []).push(p); });
   } catch (e) {
     console.error(e);
-    main.innerHTML = `<div class="wrap section"><div class="empty"><h2>No pudimos cargar el catálogo</h2><p class="muted">La información está temporalmente desactualizada. Intenta de nuevo en un momento o escríbenos por WhatsApp.</p><button class="btn btn--primary" onclick="location.reload()">Reintentar</button></div></div>`;
+    main.innerHTML = `<div class="wrap section"><div class="empty"><h2>Ups, no pudimos cargar el catálogo</h2><p class="muted">Algo no cargó bien de nuestro lado. Intenta de nuevo en un momento o escríbenos por WhatsApp y te ayudamos.</p><button class="btn btn--primary" onclick="location.reload()">Reintentar</button></div></div>`;
     return;
   }
   $("#mainNav").innerHTML = `<a href="#/">Inicio</a>
     <div class="dd"><button class="dd__btn" id="prodBtn" aria-expanded="false" aria-controls="prodMenu">Productos<svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></button>
       <div class="dd__menu" id="prodMenu"><a href="#/c/todo"><b>Ver todo</b></a>${DEPTS.map((d) => `<a href="#/c/${d.slug}">${esc(d.name)}</a>`).join("")}</div></div>
-    <a href="#/contacto">Contáctenos</a>`;
+    <a href="#/contacto">Contáctanos</a>`;
   $("#prodBtn").onclick = (e) => { e.stopPropagation(); const b = $("#prodBtn"); const o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.parentElement.classList.toggle("open", o); };
   $("#footCats").innerHTML = DEPTS.map((d) => `<li><a href="#/c/${d.slug}">${esc(d.name)}</a></li>`).join("");
   route();
@@ -85,7 +96,7 @@ const priceFor = (p, size) => (findVariant(p, size) || p.variants.find((v) => v.
 const showSizes = (p) => p.variants.length > 1 || (p.variants.length === 1 && p.variants[0].size);
 function priceLabel(p) {
   const priced = p.variants.filter((v) => v.price != null);
-  if (!priced.length) return "Consultar precio";
+  if (!priced.length) return "Pregúntanos el precio";
   const min = priced.reduce((a, b) => (b.price < a.price ? b : a));
   const desde = new Set(priced.map((v) => v.price)).size > 1;
   return `${min.old && !desde ? `<span class="old">${cop(min.old)}</span>` : ""}${desde ? "Desde " : ""}${cop(min.price)}`;
@@ -107,11 +118,11 @@ function card(p) {
       <a class="card__name" href="#/p/${p.id}">${esc(g.length > 1 ? p._base : p.nombre)}</a>
       <div class="card__meta">${opts}</div></div>
     <div class="card__row"><span class="price">${priceLabel(p)}</span>
-      ${agot ? `<a class="chip" style="position:relative;z-index:1" href="${consultUrl(p)}" target="_blank" rel="noopener">${icon("wa")}Consultar</a>`
+      ${agot ? `<a class="chip" style="position:relative;z-index:1" href="${consultUrl(p)}" target="_blank" rel="noopener">${icon("wa")}Pregúntanos</a>`
         : `<button class="add" data-add="${p.id}" ${quick ? 'data-pick="1"' : ""} aria-label="${quick ? "Elegir opciones de" : "Agregar a Mi pedido"} ${esc(p.nombre)}">${icon(quick ? "arrow" : "plus")}</button>`}</div>
   </article>`;
 }
-const consultUrl = (p) => `https://wa.me/${DK.WA_NUMBER}?text=${encodeURIComponent("Hola Dögker, quiero consultar disponibilidad de: " + p.nombre)}`;
+const consultUrl = (p) => `https://wa.me/${DK.WA_NUMBER}?text=${encodeURIComponent("Hola Dögker, ¿me cuentan cuándo vuelve a estar disponible: " + p.nombre)}`;
 const groupsFirst = (list) => { const seen = new Set(); return list.filter((p) => { const k = p._col + "|" + p._base; if (seen.has(k)) return false; seen.add(k); return true; }); };
 
 /* ---------- router ---------- */
@@ -249,7 +260,7 @@ function renderProduct(p) {
       <p class="desc" style="margin-top:18px">${esc(cleanDesc(p.descripcion))}</p>
       ${g.length > 1 ? `<div class="opt"><div class="opt__label">Color: <b>${esc(p._variant)}</b></div><div class="opt__choices">${g.map((x) => `<a class="chip" href="#/p/${x.id}" aria-current="${x.id === p.id}">${swatchOf(x._variant) ? `<i style="width:14px;height:14px;border-radius:99px;background:${swatchOf(x._variant)}"></i>` : ""}${esc(x._variant)}</a>`).join("")}</div></div>` : ""}
       ${showSizes(p) ? `<div class="opt"><div class="opt__label">${esc(p.vLabel)}: <b id="sizeLbl">${esc(size)}</b></div><div class="opt__choices">${p.variants.map((s) => `<button class="chip" data-size="${esc(s.size)}" aria-pressed="${s.size === size}" ${s.inStock ? "" : 'disabled title="Agotado"'}>${esc(s.size)}${s.price != null ? " · " + cop(s.price) : ""}</button>`).join("")}</div></div>` : ""}
-      ${agot ? `<a class="btn btn--primary btn--block" href="${consultUrl(p)}" target="_blank" rel="noopener">${icon("wa")}Consultar disponibilidad</a>`
+      ${agot ? `<a class="btn btn--primary btn--block" href="${consultUrl(p)}" target="_blank" rel="noopener">${icon("wa")}Pregúntanos cuándo llega</a>`
         : `<div class="buy"><div class="stepper" aria-label="Cantidad"><button id="qMinus" aria-label="Quitar uno">${icon("minus")}</button><span id="qty" aria-live="polite">1</span><button id="qPlus" aria-label="Agregar uno">${icon("plus")}</button></div>
         <button class="btn btn--primary" id="addBtn">Agregar a Mi pedido</button></div>`}
       <div class="note">${icon("wa")}Confirmaremos disponibilidad y entrega contigo por WhatsApp.</div>
@@ -317,15 +328,16 @@ function renderInfo(page) {
 }
 
 function renderContact() {
-  document.title = "Contáctenos · Dögker";
+  document.title = "Contáctanos · Dögker";
   const email = t("contact_email").trim();
-  main.innerHTML = `<div class="wrap section"><nav class="crumbs" aria-label="Ruta"><a href="#/">Inicio</a>${icon("chev")}<span>Contáctenos</span></nav>
+  main.innerHTML = `<div class="wrap section"><nav class="crumbs" aria-label="Ruta"><a href="#/">Inicio</a>${icon("chev")}<span>Contáctanos</span></nav>
     <div class="contact">
       <div><h1 style="font-size:clamp(2.4rem,5vw,4rem)">${esc(t("contact_title"))}</h1>
         <p class="muted" style="font-size:18px;max-width:520px">${esc(t("contact_text"))}</p>
         <ul class="contact__list">
           <li>${icon("wa")}<div><b>WhatsApp</b><br><a href="https://wa.me/${esc(t("whatsapp_number"))}" target="_blank" rel="noopener">${esc(t("whatsapp_display"))}</a></div></li>
           <li>${icon("ig")}<div><b>Instagram</b><br><a href="https://www.instagram.com/${esc(t("instagram_user"))}/" target="_blank" rel="noopener">@${esc(t("instagram_user"))}</a></div></li>
+          ${socials().filter(([, ic]) => ic === "tiktok" || ic === "fb").map(([href, ic, name]) => `<li>${icon(ic)}<div><b>${name}</b><br><a href="${esc(href)}" target="_blank" rel="noopener">${name === "TikTok" ? "@" + esc(t("tiktok_user").replace(/^@/, "")) : "Síguenos"}</a></div></li>`).join("")}
           ${email ? `<li>${icon("mail")}<div><b>Correo</b><br><a href="mailto:${esc(email)}">${esc(email)}</a></div></li>` : ""}
           <li>${icon("clock")}<div><b>Horario</b><br>${esc(t("contact_hours"))}<br><span class="muted">${esc(t("contact_city"))}</span></div></li>
         </ul></div>

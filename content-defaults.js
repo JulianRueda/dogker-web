@@ -40,17 +40,19 @@ export const CONTENT = [
   ["Contacto", "whatsapp_number", "Número de WhatsApp (solo números, con 57 al inicio)", "573125575932"],
   ["Contacto", "whatsapp_display", "WhatsApp como se muestra en la página", "+57 312 557 5932"],
   ["Contacto", "instagram_user", "Usuario de Instagram (sin @)", "dogkercol"],
+  ["Contacto", "tiktok_user", "Usuario de TikTok (sin @; vacío = no se muestra)", ""],
+  ["Contacto", "facebook_url", "Enlace de la página de Facebook (vacío = no se muestra)", ""],
 
   ["Pie de página", "footer_about", "Descripción de la marca", "Productos premium para el juego, el paseo y el cuidado de tu mascota. Calidad en cada detalle y atención cercana en cada pedido."],
   ["Pie de página", "footer_wa_title", "Recuadro WhatsApp: título", "¿Dudas antes de pedir?"],
   ["Pie de página", "footer_wa_text", "Recuadro WhatsApp: texto", "Escríbenos y te ayudamos a escoger."],
   ["Pie de página", "footer_wa_button", "Recuadro WhatsApp: botón", "Escríbenos"],
   ["Pie de página", "footer_legal_left", "Línea legal izquierda", "© 2026 Dögker · Bogotá, Colombia"],
-  ["Pie de página", "footer_legal_right", "Línea legal derecha", "Precios en pesos colombianos (COP). Toda solicitud queda pendiente de confirmación por WhatsApp."],
+  ["Pie de página", "footer_legal_right", "Línea legal derecha", "Precios en pesos colombianos (COP). Confirmamos cada pedido contigo por WhatsApp."],
 
-  ["Páginas de ayuda", "page_como_pedir", "Página «Cómo pedir» (un párrafo por línea)", "1. Agrega productos a Mi pedido. 2. Pulsa Continuar por WhatsApp: se abre un mensaje con tu selección. 3. Envíalo; verificamos disponibilidad, acordamos la entrega y el pago.\nLa lista enviada es una solicitud pendiente de confirmación."],
+  ["Páginas de ayuda", "page_como_pedir", "Página «Cómo pedir» (un párrafo por línea)", "1. Agrega productos a Mi pedido. 2. Pulsa Continuar por WhatsApp: se abre un mensaje con tu selección. 3. Envíalo y listo: revisamos disponibilidad y acordamos contigo la entrega y el pago.\nTu lista es una solicitud: antes de cobrarte, te confirmamos todo por WhatsApp."],
 
-  ["Página de contacto", "contact_title", "Título", "Contáctenos"],
+  ["Página de contacto", "contact_title", "Título", "Contáctanos"],
   ["Página de contacto", "contact_text", "Texto de introducción", "¿Tienes dudas sobre un producto, tu pedido o una garantía? Escríbenos y te respondemos lo antes posible."],
   ["Página de contacto", "contact_email", "Correo de atención al cliente (vacío = no se muestra)", "dogkercol@gmail.com"],
   ["Página de contacto", "contact_hours", "Horario de atención", "Lunes a sábado, 8:00 a. m. a 6:00 p. m."],
