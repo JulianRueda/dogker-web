@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/logic.test.cjs && node tests/seed.test.mjs",
+    "test": "node tests/logic.test.cjs && node tests/seed.test.mjs && node tests/catalogo.test.mjs",
     "seed": "node scripts/seed.mjs"
   },
   "dependencies": {
+    "@supabase/postgrest-js": "^2.119.2",
     "@supabase/supabase-js": "^2.49.0"
   },
   "devDependencies": {
+    "sharp": "^0.33.5",
     "vite": "^6.0.0"
   }
 }

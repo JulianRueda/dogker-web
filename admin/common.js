@@ -96,7 +96,7 @@ export const parseCOP = (s) => { const d = String(s ?? "").replace(/\D/g, ""); r
 export const fmtCOP = (n) => (n == null ? "" : Math.round(n).toLocaleString("es-CO").replace(/,/g, "."));
 
 /* ---------- fotos: validación + compresión + subida ---------- */
-const MAX_IN = 15 * 1024 * 1024, MAX_OUT = 5 * 1024 * 1024, MAX_SIDE = 1600;
+const MAX_IN = 15 * 1024 * 1024, MAX_OUT = 5 * 1024 * 1024, MAX_SIDE = 1200;
 export async function compressImage(file) {
   if (!/^image\/(jpeg|png|webp)$/.test(file.type)) throw new Error(`«${file.name}»: formato no permitido. Usa JPG, PNG o WebP.`);
   if (file.size > MAX_IN) throw new Error(`«${file.name}» pesa más de 15 MB.`);
@@ -105,7 +105,7 @@ export async function compressImage(file) {
   const c = Object.assign(document.createElement("canvas"), { width: Math.round(bmp.width * s), height: Math.round(bmp.height * s) });
   const ctx = c.getContext("2d"); ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, c.width, c.height); // PNG transparente -> fondo blanco
   ctx.drawImage(bmp, 0, 0, c.width, c.height);
-  const blob = await new Promise((r) => c.toBlob(r, "image/jpeg", 0.85));
+  const blob = await new Promise((r) => c.toBlob(r, "image/jpeg", 0.82));
   if (!blob || blob.size > MAX_OUT) throw new Error(`«${file.name}» sigue pesando demasiado después de optimizarla.`);
   return blob;
 }

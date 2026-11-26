@@ -43,7 +43,7 @@ function render() {
       const sale = p.product_variants.some((v) => v.sale_price != null);
       const img = firstImg(p); const i = list.indexOf(p);
       return `<div class="prow ${p.is_active ? "" : "off"}">
-        ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : `<span class="noimg">${icon("img")}</span>`}
+        ${img ? `<img src="${esc(DK.pic(img, 1))}" alt="" loading="lazy">` : `<span class="noimg">${icon("img")}</span>`}
         <div><a class="prow__name" href="/admin/productos/editar/?id=${p.id}">${esc(p.name)}</a>
           <div class="prow__meta"><span>${esc(catName(p.category_id))}</span><b>${priceText(p)}</b>
             ${p.is_active ? "" : '<span class="tag tag--muted">Oculto</span>'}${agot ? '<span class="tag tag--ink">Agotado</span>' : ""}${sale ? '<span class="tag">Oferta</span>' : ""}${p.is_featured ? '<span class="tag">Destacado</span>' : ""}</div></div>

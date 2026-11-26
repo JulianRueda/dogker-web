@@ -2,7 +2,7 @@
    1) respaldo si Supabase tarda o la tabla está vacía, y
    2) contenido inicial de la tabla site_content (scripts/seed.mjs).
    [sección del panel, section_key, etiqueta para el cliente, texto original] */
-import { LEGAL } from "./legal-texts.js";
+// Los textos legales (valor undefined aquí) viven en legal-texts.js y se cargan aparte: pesan ~40 KB y solo se usan en sus páginas.
 
 export const CONTENT = [
   ["Barra superior", "topbar_text", "Mensaje de la franja roja superior", "Entregas en Bogotá y Soacha de lunes a sábado · Envíos nacionales coordinados por WhatsApp"],
@@ -56,10 +56,10 @@ export const CONTENT = [
   ["Página de contacto", "contact_hours", "Horario de atención", "Lunes a sábado, 8:00 a. m. a 6:00 p. m."],
   ["Página de contacto", "contact_city", "Ciudad", "Bogotá, Colombia"],
 
-  ["Páginas legales", "page_terminos", "Términos y condiciones (## título, - viñeta, una línea = un párrafo)", LEGAL.page_terminos],
-  ["Páginas legales", "page_pqrs", "PQRS, garantías y devoluciones (## título, - viñeta)", LEGAL.page_pqrs],
-  ["Páginas legales", "page_envios", "Políticas de envío (## título, - viñeta)", LEGAL.page_envios],
-  ["Páginas legales", "page_privacidad", "Privacidad y tratamiento de datos (## título, - viñeta)", LEGAL.page_privacidad],
+  ["Páginas legales", "page_terminos", "Términos y condiciones (## título, - viñeta, una línea = un párrafo)", undefined],
+  ["Páginas legales", "page_pqrs", "PQRS, garantías y devoluciones (## título, - viñeta)", undefined],
+  ["Páginas legales", "page_envios", "Políticas de envío (## título, - viñeta)", undefined],
+  ["Páginas legales", "page_privacidad", "Privacidad y tratamiento de datos (## título, - viñeta)", undefined],
 ];
 
-export const DEFAULTS = Object.fromEntries(CONTENT.map(([, k, , v]) => [k, v]));
+export const DEFAULTS = Object.fromEntries(CONTENT.filter(([, , , v]) => v != null).map(([, k, , v]) => [k, v]));

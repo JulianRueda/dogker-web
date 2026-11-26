@@ -1,5 +1,6 @@
 import { supabase, $, esc, icon, spinner, toast, errMsg, requireSession } from "../common.js";
 import { CONTENT } from "../../content-defaults.js";
+import { LEGAL } from "../../legal-texts.js";
 
 await requireSession("textos");
 const app = $("#app");
@@ -10,7 +11,7 @@ async function load() {
   if (error) return toast(errMsg(error), "err");
   const db = Object.fromEntries(data.map((r) => [r.section_key, r]));
   // Los textos que aún no están en la base se muestran con su valor original y se crean al guardar.
-  rows = CONTENT.map(([section, key, label, value], i) => {
+  rows = CONTENT.map(([section, key, label, value = LEGAL[key]], i) => {
     const r = db[key];
     return r ? Object.assign(r, { label: r.label || label, section: r.section || section, display_order: r.display_order ?? i }) : { section_key: key, label, content_value: value, section, display_order: i };
   });

@@ -1,4 +1,4 @@
-import { supabase, $, esc, icon, spinner, toast, errMsg, confirmDialog, requireSession, compressImage, uploadImage, removeStored, uniqueSlug } from "../common.js";
+import { DK, supabase, $, esc, icon, spinner, toast, errMsg, confirmDialog, requireSession, compressImage, uploadImage, removeStored, uniqueSlug } from "../common.js";
 
 await requireSession("categorias");
 const app = $("#app");
@@ -19,7 +19,7 @@ async function load() {
 function row(c, child, siblings) {
   const i = siblings.indexOf(c); const n = counts[c.id] || 0;
   return `<div class="crow ${child ? "child" : ""}">
-    ${child ? "" : c.image_url ? `<img src="${esc(c.image_url)}" alt="">` : `<span class="noimg"></span>`}
+    ${child ? "" : c.image_url ? `<img src="${esc(DK.pic(c.image_url, 1))}" alt="">` : `<span class="noimg"></span>`}
     <div><b>${esc(c.name)}</b><div class="hint">${child ? `${n} producto${n === 1 ? "" : "s"}` : `En el menú · ${kids(c.id).length} subcategorías`}</div></div>
     <div class="prow__act">
       <button class="abtn abtn--ghost abtn--icon" data-move="${c.id}" data-dir="-1" ${i === 0 ? "disabled" : ""} aria-label="Subir">${icon("up")}</button>
@@ -38,7 +38,7 @@ function form() {
         <small>Las del menú principal agrupan subcategorías (colecciones).</small></label>
     </div>
     ${isTop ? `<div class="field"><span>Foto redonda (inicio)</span><div style="display:flex;gap:12px;align-items:center">
-      ${e.image_url ? `<img src="${esc(e.image_url)}" alt="" style="width:72px;height:72px;border-radius:99px;object-fit:cover">` : ""}
+      ${e.image_url ? `<img src="${esc(DK.pic(e.image_url, 1))}" alt="" style="width:72px;height:72px;border-radius:99px;object-fit:cover">` : ""}
       <label class="abtn">${icon("img")}${e.image_url ? "Cambiar foto" : "Subir foto"}<input type="file" id="cimg" accept="image/jpeg,image/png,image/webp" hidden></label></div></div>` : ""}
     <div class="adialog__row"><button class="abtn" id="ccancel">Cancelar</button><button class="abtn abtn--primary" id="csave">${icon("check")}Guardar categoría</button></div>
   </section>`;

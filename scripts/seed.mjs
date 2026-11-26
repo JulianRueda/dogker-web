@@ -3,6 +3,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { CONTENT } from "../content-defaults.js";
+import { LEGAL } from "../legal-texts.js";
 import "../logic.js";
 
 const DK = globalThis.DK;
@@ -53,7 +54,7 @@ export function buildSeed(catalog) {
     out.push(`insert into public.product_images (product_id, image_url, display_order) select id, ${q("/" + p.imagen)}, 0 from public.products pr where slug = ${q(p.id)} and not exists (select 1 from public.product_images i where i.product_id = pr.id);`);
   });
   out.push("", "-- Textos de la página");
-  CONTENT.forEach(([section, key, label, value], i) => out.push(`insert into public.site_content (section_key, label, content_value, section, display_order) values (${q(key)}, ${q(label)}, ${q(value)}, ${q(section)}, ${i}) on conflict (section_key) do nothing;`));
+  CONTENT.forEach(([section, key, label, value = LEGAL[key]], i) => out.push(`insert into public.site_content (section_key, label, content_value, section, display_order) values (${q(key)}, ${q(label)}, ${q(value)}, ${q(section)}, ${i}) on conflict (section_key) do nothing;`));
   out.push("", "commit;", "");
   return out.join("\n");
 }

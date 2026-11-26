@@ -88,6 +88,9 @@
     return { text: out.join("\n"), url: `https://wa.me/${api.WA_NUMBER}?text=${encodeURIComponent(out.join("\n"))}`, subtotal: sub };
   }
 
-  const api = { WA_NUMBER: "573125575932", DEPTS, norm, slugify, cop, collectionOf, deptOf, splitName, parseSizes, parsePresentations, dimensions, cleanDesc, swatchOf, matches, deliveryEstimate, waMessage };
+  // Fotos propias del sitio (/imagenes/…) existen en WebP 1080 y miniatura 540; las subidas al bucket se usan tal cual.
+  const pic = (url, small) => (/^\/imagenes\/[^?#]+\.(jpe?g|png|webp)$/i.test(url || "") ? url.replace(/\.(jpe?g|png|webp)$/i, small ? "-540.webp" : ".webp") : url);
+
+  const api = { pic, WA_NUMBER: "573125575932", DEPTS, norm, slugify, cop, collectionOf, deptOf, splitName, parseSizes, parsePresentations, dimensions, cleanDesc, swatchOf, matches, deliveryEstimate, waMessage };
   root.DK = api; // window.DK en el navegador, globalThis.DK en Node (tests y seed)
 })(globalThis);

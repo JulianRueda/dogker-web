@@ -1,4 +1,4 @@
-import { supabase, $, esc, icon, spinner, toast, errMsg, confirmDialog, requireSession, parseCOP, fmtCOP, compressImage, uploadImage, removeStored, uniqueSlug } from "../../common.js";
+import { DK, supabase, $, esc, icon, spinner, toast, errMsg, confirmDialog, requireSession, parseCOP, fmtCOP, compressImage, uploadImage, removeStored, uniqueSlug } from "../../common.js";
 
 await requireSession("productos");
 const app = $("#app");
@@ -59,7 +59,7 @@ function render() {
     <section class="acard"><h2>Fotos</h2><p class="hint">La primera foto es la principal. Usa las flechas para reordenar. Se optimizan automáticamente (máx. 1600 px).</p>
       <div class="photos" id="photos">${images.map((im, i) => `
         <div class="photo ${i === 0 ? "main" : ""} ${im.busy ? "busy" : ""}">
-          <img src="${esc(im.url)}" alt="Foto ${i + 1}">
+          <img src="${esc(DK.pic(im.url, 1))}" alt="Foto ${i + 1}">
           ${i === 0 ? '<span class="photo__badge">Principal</span>' : ""}${im.blob ? '<span class="photo__new">Sin guardar</span>' : ""}
           <div class="photo__bar"><button type="button" data-img-move="${i}" data-dir="-1" ${i === 0 ? "disabled" : ""} aria-label="Mover a la izquierda">${icon("left")}</button>
             <button type="button" data-img-del="${i}" aria-label="Quitar foto">${icon("trash")}</button>

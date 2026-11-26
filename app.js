@@ -1,10 +1,10 @@
 /* Dögker — tienda: catálogo, fichas, Mi pedido y salida a WhatsApp. Datos y textos vienen de Supabase. */
 import "./logic.js";
-import { supabase } from "./src/supabase.js";
+import { db as supabase } from "./src/db.js";
 import { DEFAULTS } from "./content-defaults.js";
 
 const DK = window.DK;
-const { slugify, cop, splitName, cleanDesc, swatchOf, matches, deliveryEstimate, waMessage } = DK;
+const { pic, slugify, cop, splitName, cleanDesc, swatchOf, matches, deliveryEstimate, waMessage } = DK;
 
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => (s ?? "").toString().replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -92,6 +92,7 @@ function priceLabel(p) {
 }
 
 /* ---------- helpers ---------- */
+const srcset = (u) => (pic(u, 1) !== u ? `srcset="${esc(pic(u, 1))} 540w, ${esc(pic(u))} 1080w"` : ""); // solo fotos propias tienen miniatura
 const groupOf = (p) => GROUPS[p._col + "|" + p._base] || [p];
 function card(p) {
   const g = groupOf(p); const agot = p._estado === "agotado";
@@ -100,7 +101,7 @@ function card(p) {
     : esc(p.dim || (p.variants.length > 1 ? `Varias opciones de ${p.vLabel.toLowerCase()}` : "Talla única"));
   const quick = p.variants.length > 1 || g.length > 1;
   return `<article class="card">
-    <a class="card__media" href="#/p/${p.id}" tabindex="-1" aria-hidden="true"><img loading="lazy" src="${esc(p.imagen)}" alt="" width="540" height="600" ${agot ? 'style="opacity:.5"' : ""}>
+    <a class="card__media" href="#/p/${p.id}" tabindex="-1" aria-hidden="true"><img loading="lazy" decoding="async" src="${esc(pic(p.imagen, 1))}" ${srcset(p.imagen)} sizes="(min-width:1200px) 25vw, (min-width:768px) 33vw, 50vw" alt="" width="540" height="600" ${agot ? 'style="opacity:.5"' : ""}>
       ${agot ? '<span class="badge badge--ink">Agotado temporalmente</span>' : ""}</a>
     <div><div class="card__cat">${esc(p._col)}</div>
       <a class="card__name" href="#/p/${p.id}">${esc(g.length > 1 ? p._base : p.nombre)}</a>
@@ -151,19 +152,19 @@ function renderHome() {
       <p>${esc(t("hero_subtitle"))}</p>
       <div class="hero__cta"><a class="btn btn--primary" href="${esc(t("hero_cta_primary_link"))}">${esc(t("hero_cta_primary_text"))}</a><a class="btn btn--secondary" href="${esc(t("hero_cta_secondary_link"))}">${esc(t("hero_cta_secondary_text"))}</a></div>
     </div>
-    ${hero ? `<figure class="reveal" style="margin:0"><a class="hero__art" href="#/p/${hero.id}"><img src="${esc(hero.imagen)}" alt="${esc(hero.nombre)}" width="1080" height="1080" fetchpriority="high"></a>
+    ${hero ? `<figure class="reveal" style="margin:0"><a class="hero__art" href="#/p/${hero.id}"><img src="${esc(pic(hero.imagen))}" ${srcset(hero.imagen)} sizes="(min-width:1024px) 50vw, 100vw" alt="${esc(hero.nombre)}" width="1080" height="1080" fetchpriority="high"></a>
       <figcaption class="hero__cap"><span>${esc(hero.nombre)}${hero.dim ? " · " + esc(hero.dim) : ""}</span><b>${priceLabel(hero)}</b></figcaption></figure>` : ""}
     </div></section>
 
   <section class="section section--tight wrap"><div class="section__head"><h2>${esc(t("categories_title"))}</h2><a class="more" href="#/c/todo">Ver todo${icon("arrow")}</a></div>
-    <div class="cats">${DEPTS.map((x) => `<a href="#/c/${x.slug}"><div class="disc">${x.image ? `<img loading="lazy" src="${esc(x.image)}" alt="">` : ""}</div>${esc(x.name)}</a>`).join("")}</div></section>
+    <div class="cats">${DEPTS.map((x) => `<a href="#/c/${x.slug}"><div class="disc">${x.image ? `<img loading="lazy" decoding="async" src="${esc(pic(x.image, 1))}" alt="" width="96" height="96">` : ""}</div>${esc(x.name)}</a>`).join("")}</div></section>
 
   ${feat.length ? `<section class="section wrap" style="padding-top:40px"><div class="section__head"><div><div class="eyebrow">${esc(t("featured_eyebrow"))}</div><h2>${esc(t("featured_title"))}</h2></div>
     <a class="btn btn--secondary" href="${esc(t("featured_button_link"))}">${esc(t("featured_button_text"))}</a></div>
     <div class="grid">${feat.map(card).join("")}</div></section>` : ""}
 
   ${arena ? `<section class="arena"><div class="wrap arena__in">
-    <a class="arena__img" href="#/p/${arena.id}"><img loading="lazy" src="${esc(arena.imagen)}" alt="${esc(arena.nombre)}"></a>
+    <a class="arena__img" href="#/p/${arena.id}"><img loading="lazy" decoding="async" src="${esc(pic(arena.imagen))}" ${srcset(arena.imagen)} sizes="(min-width:1024px) 50vw, 100vw" alt="${esc(arena.nombre)}" width="1080" height="1080"></a>
     <div><span class="badge badge--ivory">${esc(t("arena_badge"))}</span>
       <h2 style="margin-top:16px">${esc(arena.nombre)}</h2>
       <ul>${lines("arena_bullets").map((b) => `<li>${icon("check")}${esc(b)}</li>`).join("")}</ul>
@@ -236,9 +237,9 @@ function renderProduct(p) {
   <div class="wrap"><nav class="crumbs" aria-label="Ruta"><a href="#/">Inicio</a>${icon("chev")}${p._dept ? `<a href="#/c/${p._dept.slug}">${esc(p._dept.name)}</a>${icon("chev")}` : ""}<a href="#/c/${p._dept?.slug || "todo"}?col=${slugify(p._col)}">${esc(p._col)}</a></nav>
   <div class="pdp">
     <div class="pdp__gallery">
-      <div class="pdp__main"><img id="mainImg" src="${esc(p.imagen)}" alt="${esc(p.nombre)}" width="1080" height="1080">
+      <div class="pdp__main"><img id="mainImg" src="${esc(pic(p.imagen))}" ${srcset(p.imagen)} sizes="(min-width:1024px) 55vw, 100vw" alt="${esc(p.nombre)}" width="1080" height="1080">
         <button class="pdp__zoom" id="zoomBtn">${icon("zoom")}Ampliar</button></div>
-      ${p.imagenes.length > 1 ? `<div class="thumbs" role="group" aria-label="Fotos">${p.imagenes.map((src, i) => `<button aria-pressed="${i === 0}" data-img="${i}" aria-label="Foto ${i + 1}"><img src="${esc(src)}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}
+      ${p.imagenes.length > 1 ? `<div class="thumbs" role="group" aria-label="Fotos">${p.imagenes.map((src, i) => `<button aria-pressed="${i === 0}" data-img="${i}" aria-label="Foto ${i + 1}"><img src="${esc(pic(src, 1))}" alt="" loading="lazy" width="76" height="76"></button>`).join("")}</div>` : ""}
     </div>
     <div>
       <span class="badge ${agot ? "badge--ink" : "badge--ivory"}">${agot ? "Agotado temporalmente" : esc(p._col)}</span>
@@ -271,9 +272,9 @@ function renderProduct(p) {
   };
   paint();
   main.querySelectorAll("[data-size]").forEach((b) => b.onclick = () => { size = b.dataset.size; main.querySelectorAll("[data-size]").forEach((x) => x.setAttribute("aria-pressed", x === b)); $("#sizeLbl").textContent = size; paint(); });
-  main.querySelectorAll("[data-img]").forEach((b) => b.onclick = () => { img = +b.dataset.img; $("#mainImg").src = p.imagenes[img]; main.querySelectorAll("[data-img]").forEach((x) => x.setAttribute("aria-pressed", x === b)); });
+  main.querySelectorAll("[data-img]").forEach((b) => b.onclick = () => { img = +b.dataset.img; const m = $("#mainImg"); m.removeAttribute("srcset"); m.src = pic(p.imagenes[img]); main.querySelectorAll("[data-img]").forEach((x) => x.setAttribute("aria-pressed", x === b)); });
   if ($("#qPlus")) { $("#qPlus").onclick = () => { qty = Math.min(99, qty + 1); $("#qty").textContent = qty; paint(); }; $("#qMinus").onclick = () => { qty = Math.max(1, qty - 1); $("#qty").textContent = qty; paint(); }; $("#addBtn").onclick = () => addToCart(p, size, qty); }
-  $("#zoomBtn").onclick = () => { $("#zoomImg").src = p.imagenes[img] || p.imagen; $("#zoomImg").alt = p.nombre; $("#zoom").showModal(); };
+  $("#zoomBtn").onclick = () => { $("#zoomImg").src = pic(p.imagenes[img] || p.imagen); $("#zoomImg").alt = p.nombre; $("#zoom").showModal(); };
 }
 
 // Texto editable con formato mínimo: "## " título, "- " viñeta, cualquier otra línea = párrafo.
@@ -291,6 +292,12 @@ function rich(k) {
 
 const LEGAL_PAGES = [["terminos", "Términos y condiciones"], ["pqrs", "PQRS, garantías y devoluciones"], ["envios", "Políticas de envío"], ["privacidad", "Privacidad de datos"]];
 function renderInfo(page) {
+  // Los textos legales por defecto (~40 KB) se descargan solo al abrir una página legal.
+  if (["terminos", "pqrs", "envios", "privacidad", "politicas"].includes(page) && !("page_terminos" in DEFAULTS)) {
+    main.innerHTML = `<div class="wrap section"><p class="muted">Cargando…</p></div>`;
+    import("./legal-texts.js").then(({ LEGAL }) => { Object.assign(DEFAULTS, LEGAL); if (location.hash.includes(page)) renderInfo(page); });
+    return;
+  }
   const pages = {
     "como-pedir": ["Cómo pedir", rich("page_como_pedir")],
     entregas: ["Entregas y envíos", deliveryBlock(deliveryEstimate(new Date()))],
@@ -352,7 +359,7 @@ function renderCartCount() { $("#cartCount").textContent = cart.reduce((s, l) =>
 let toastT;
 function showToast(p, qty) {
   const el = $("#toast");
-  el.innerHTML = `<img src="${esc(p.imagen)}" alt=""><div><b style="display:flex;gap:6px;align-items:center">${icon("check")}Agregado a Mi pedido</b><span class="small" style="color:var(--ivory)">${esc(p.nombre)} · ${qty} u.</span></div><button id="toastOpen">Ver pedido</button>`;
+  el.innerHTML = `<img src="${esc(pic(p.imagen, 1))}" alt=""><div><b style="display:flex;gap:6px;align-items:center">${icon("check")}Agregado a Mi pedido</b><span class="small" style="color:var(--ivory)">${esc(p.nombre)} · ${qty} u.</span></div><button id="toastOpen">Ver pedido</button>`;
   el.classList.add("show"); $("#toastOpen").onclick = openDrawer;
   clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove("show"), 4000);
 }
@@ -369,7 +376,7 @@ function renderDrawer() {
   if (!rows.length) { $("#drawerBody").innerHTML = `<div class="empty" style="margin-top:24px"><h3>Tu pedido está vacío</h3><p class="muted">Agrega productos y continúa por WhatsApp cuando estés listo.</p><button class="btn btn--primary" onclick="location.hash='#/c/todo';document.getElementById('closeDrawer').click()">Ver productos</button></div>`; $("#drawerFoot").innerHTML = ""; return; }
   $("#drawerBody").innerHTML = (issues.length ? `<div class="alert">${icon("alert")}<div><b>Actualizamos tu pedido</b><br>${issues.map((l) => l.gone ? `${esc(l.p?.nombre || l.id)}${l.size ? " (" + esc(l.size) + ")" : ""} ya no está disponible en la tienda.` : l.agot ? `${esc(l.p.nombre)} está agotado temporalmente y no se incluirá.` : `${esc(l.p.nombre)}: el precio cambió de ${cop(l.price) || "—"} a ${cop(l.now) || "por confirmar"}.`).join("<br>")}<br><button class="chip" id="ackBtn" style="margin-top:8px">Revisé los cambios</button></div></div>` : "")
     + rows.map((l, i) => `<div class="line ${l.gone || l.agot ? "na" : ""}">
-      <img src="${esc(l.p?.imagen || "")}" alt="">
+      <img src="${esc(pic(l.p?.imagen || "", 1))}" alt="" loading="lazy">
       <div><div class="line__top"><span>${esc(l.p?.nombre || l.id)}</span><button class="icon-btn" style="width:36px;height:36px" data-del="${i}" aria-label="Quitar ${esc(l.p?.nombre || "")}">${icon("trash")}</button></div>
         <div class="line__var">${[l.size && `${esc(l.p?.vLabel || "Talla")}: ${esc(l.size)}`, "Ref. " + esc(l.id)].filter(Boolean).join(" · ")}</div>
         <div class="line__bot">${l.gone || l.agot ? `<span class="badge badge--ink">${l.gone ? "No disponible" : "Agotado temporalmente"}</span>` : `<div class="stepper"><button data-dec="${i}" aria-label="Quitar uno">${icon("minus")}</button><span>${l.qty}</span><button data-inc="${i}" aria-label="Agregar uno">${icon("plus")}</button></div>`}
