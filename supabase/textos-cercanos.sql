@@ -8,7 +8,7 @@ where section_key = 'footer_legal_right'
 update public.site_content
 set content_value = E'1. Agrega productos a Mi pedido. 2. Pulsa Continuar por WhatsApp: se abre un mensaje con tu selección. 3. Envíalo y listo: revisamos disponibilidad y acordamos contigo la entrega y el pago.\nTu lista es una solicitud: antes de cobrarte, te confirmamos todo por WhatsApp.'
 where section_key = 'page_como_pedir'
-  and content_value = E'1. Agrega productos a Mi pedido. 2. Pulsa Continuar por WhatsApp: se abre un mensaje con tu selección. 3. Envíalo; verificamos disponibilidad, acordamos la entrega y el pago.\nLa lista enviada es una solicitud pendiente de confirmación.';
+  and replace(content_value, E'\r', '') = E'1. Agrega productos a Mi pedido. 2. Pulsa Continuar por WhatsApp: se abre un mensaje con tu selección. 3. Envíalo; verificamos disponibilidad, acordamos la entrega y el pago.\nLa lista enviada es una solicitud pendiente de confirmación.';
 
 -- El texto obsoleto de "Políticas comerciales" ya no se usa (la página ahora es Términos y condiciones).
 delete from public.site_content where section_key = 'page_politicas';
