@@ -2,7 +2,7 @@
    Son el valor por defecto; el cliente los edita en /admin → Textos de la página → Páginas legales. */
 
 const TITULAR = `## Propiedad del Portal
-Estos términos y condiciones de uso (los "Términos y Condiciones") aplican al sitio web disponible en https://dogker-web-8ul6.vercel.app, en adelante "el Portal", el cual es propiedad de JUAN PABLO ACEVEDO CARVAJAL, mayor de edad identificado con cédula de ciudadanía No. 1.193.568.142, en adelante "el Titular o DOGKER". Dirección de notificación judicial: Carrera 96F #22K-40 Hayuelos Reservado 2 – Interior 4 – Apartamento 401 – Bogotá D.C. Teléfono: 3102665878. Correo electrónico solo para notificación judicial: juanchoa29@outlook.com.`;
+Estos términos y condiciones de uso (los "Términos y Condiciones") aplican al sitio web disponible en https://dogker.com, en adelante "el Portal", el cual es propiedad de JUAN PABLO ACEVEDO CARVAJAL, mayor de edad identificado con cédula de ciudadanía No. 1.193.568.142, en adelante "el Titular o DOGKER". Dirección de notificación judicial: Carrera 96F #22K-40 Hayuelos Reservado 2 – Interior 4 – Apartamento 401 – Bogotá D.C. Teléfono: 3102665878. Correo electrónico solo para notificación judicial: juanchoa29@outlook.com.`;
 
 const ENVIOS = `## Envío y entrega de los productos
 Los productos adquiridos a través del Portal serán entregados en la dirección indicada por el Usuario durante el proceso de compra, de conformidad con la modalidad de envío seleccionada y la cobertura disponible. El Usuario es el único responsable de suministrar información completa, exacta y actualizada para la entrega del pedido.
@@ -27,7 +27,7 @@ Para la procedencia de la garantía deberán cumplirse las siguientes condicione
 - La garantía legal o comercial del producto deberá encontrarse vigente. El término otorgado para todos nuestros productos es de un (1) mes a partir de la recepción de su compra por parte del Usuario.
 - El Usuario deberá presentar al momento de reclamar la garantía: factura de compra a nombre del solicitante; descripción detallada de la falla, anexando pruebas que comprueben indicio de las fallas; y solicitud simple de acceso a la garantía.
 - La solicitud deberá obedecer a defectos de fabricación, calidad, idoneidad o funcionamiento. La garantía no procederá cuando el daño sea consecuencia del uso indebido, accidentes, intervención de terceros no autorizados, desgaste normal, incumplimiento de las instrucciones de uso o cualquier otra causal prevista en la ley.
-- La solicitud debe elevarse al correo electrónico: [CORREO DE ATENCIÓN PENDIENTE]
+- La solicitud debe elevarse al correo electrónico: dogkercol@gmail.com
 - DOGKER evaluará la solicitud para determinar la procedencia de la garantía conforme a la Ley 1480 de 2011, dentro de los diez (10) días hábiles siguientes a su recepción. En caso de ser necesario, DOGKER requerirá al solicitante más información o programará una inspección del producto.
 - Aceptada la solicitud de garantía, los productos deberán ser enviados a la dirección: Carrera 96F #22K-40 Hayuelos Reservado 2 – Interior 4 – Apartamento 401 – Bogotá D.C.
 - Si la garantía es procedente, se podrá reparar el producto, reemplazarlo por otro de iguales o similares características o efectuar la devolución del dinero, según corresponda y de conformidad con la legislación vigente, dentro de los quince (15) días hábiles siguientes a la aprobación de la solicitud por parte de DOGKER.

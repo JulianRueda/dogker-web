@@ -52,7 +52,7 @@ export const CONTENT = [
 
   ["Página de contacto", "contact_title", "Título", "Contáctenos"],
   ["Página de contacto", "contact_text", "Texto de introducción", "¿Tienes dudas sobre un producto, tu pedido o una garantía? Escríbenos y te respondemos lo antes posible."],
-  ["Página de contacto", "contact_email", "Correo de atención al cliente (vacío = no se muestra)", ""],
+  ["Página de contacto", "contact_email", "Correo de atención al cliente (vacío = no se muestra)", "dogkercol@gmail.com"],
   ["Página de contacto", "contact_hours", "Horario de atención", "Lunes a sábado, 8:00 a. m. a 6:00 p. m."],
   ["Página de contacto", "contact_city", "Ciudad", "Bogotá, Colombia"],
 
