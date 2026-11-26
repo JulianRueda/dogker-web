@@ -14,7 +14,6 @@ async function load() {
     const r = db[key];
     return r ? Object.assign(r, { label: r.label || label, section: r.section || section, display_order: r.display_order ?? i }) : { section_key: key, label, content_value: value, section, display_order: i };
   });
-  rows.push(...data.filter((r) => !rows.includes(r)));
   render();
 }
 

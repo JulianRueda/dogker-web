@@ -2,6 +2,8 @@
    1) respaldo si Supabase tarda o la tabla está vacía, y
    2) contenido inicial de la tabla site_content (scripts/seed.mjs).
    [sección del panel, section_key, etiqueta para el cliente, texto original] */
+import { LEGAL } from "./legal-texts.js";
+
 export const CONTENT = [
   ["Barra superior", "topbar_text", "Mensaje de la franja roja superior", "Entregas en Bogotá y Soacha de lunes a sábado · Envíos nacionales coordinados por WhatsApp"],
 
@@ -47,7 +49,17 @@ export const CONTENT = [
   ["Pie de página", "footer_legal_right", "Línea legal derecha", "Precios en pesos colombianos (COP). Toda solicitud queda pendiente de confirmación por WhatsApp."],
 
   ["Páginas de ayuda", "page_como_pedir", "Página «Cómo pedir» (un párrafo por línea)", "1. Agrega productos a Mi pedido. 2. Pulsa Continuar por WhatsApp: se abre un mensaje con tu selección. 3. Envíalo; verificamos disponibilidad, acordamos la entrega y el pago.\nLa lista enviada es una solicitud pendiente de confirmación."],
-  ["Páginas de ayuda", "page_politicas", "Página «Políticas comerciales» (un párrafo por línea)", "Contenido pendiente: Dögker definirá aquí sus condiciones de cambios, garantías, pagos y tratamiento de datos."],
+
+  ["Página de contacto", "contact_title", "Título", "Contáctenos"],
+  ["Página de contacto", "contact_text", "Texto de introducción", "¿Tienes dudas sobre un producto, tu pedido o una garantía? Escríbenos y te respondemos lo antes posible."],
+  ["Página de contacto", "contact_email", "Correo de atención al cliente (vacío = no se muestra)", ""],
+  ["Página de contacto", "contact_hours", "Horario de atención", "Lunes a sábado, 8:00 a. m. a 6:00 p. m."],
+  ["Página de contacto", "contact_city", "Ciudad", "Bogotá, Colombia"],
+
+  ["Páginas legales", "page_terminos", "Términos y condiciones (## título, - viñeta, una línea = un párrafo)", LEGAL.page_terminos],
+  ["Páginas legales", "page_pqrs", "PQRS, garantías y devoluciones (## título, - viñeta)", LEGAL.page_pqrs],
+  ["Páginas legales", "page_envios", "Políticas de envío (## título, - viñeta)", LEGAL.page_envios],
+  ["Páginas legales", "page_privacidad", "Privacidad y tratamiento de datos (## título, - viñeta)", LEGAL.page_privacidad],
 ];
 
 export const DEFAULTS = Object.fromEntries(CONTENT.map(([, k, , v]) => [k, v]));

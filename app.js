@@ -70,7 +70,11 @@ async function boot() {
     main.innerHTML = `<div class="wrap section"><div class="empty"><h2>No pudimos cargar el catálogo</h2><p class="muted">La información está temporalmente desactualizada. Intenta de nuevo en un momento o escríbenos por WhatsApp.</p><button class="btn btn--primary" onclick="location.reload()">Reintentar</button></div></div>`;
     return;
   }
-  $("#mainNav").innerHTML = DEPTS.map((d) => `<a href="#/c/${d.slug}">${esc(d.name)}</a>`).join("") + `<a href="#/c/todo">Ver todo</a>`;
+  $("#mainNav").innerHTML = `<a href="#/">Inicio</a>
+    <div class="dd"><button class="dd__btn" id="prodBtn" aria-expanded="false" aria-controls="prodMenu">Productos<svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <div class="dd__menu" id="prodMenu"><a href="#/c/todo"><b>Ver todo</b></a>${DEPTS.map((d) => `<a href="#/c/${d.slug}">${esc(d.name)}</a>`).join("")}</div></div>
+    <a href="#/contacto">Contáctenos</a>`;
+  $("#prodBtn").onclick = (e) => { e.stopPropagation(); const b = $("#prodBtn"); const o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.parentElement.classList.toggle("open", o); };
   $("#footCats").innerHTML = DEPTS.map((d) => `<li><a href="#/c/${d.slug}">${esc(d.name)}</a></li>`).join("");
   route();
 }
@@ -114,12 +118,15 @@ function route() {
   const h = location.hash.slice(1) || "/";
   const [path, qs] = h.split("?"); const params = new URLSearchParams(qs || "");
   const seg = path.split("/").filter(Boolean);
-  document.querySelectorAll(".nav a").forEach((a) => { if (a.getAttribute("href") === "#/" + seg.slice(0, 2).join("/")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
-  $("#mainNav").classList.remove("open");
+  const here = "#/" + seg.slice(0, 2).join("/");
+  document.querySelectorAll(".nav a").forEach((a) => { if (a.getAttribute("href") === here) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  $("#prodBtn")?.classList.toggle("on", seg[0] === "c" || seg[0] === "p");
+  closeMenus();
   if (seg[0] === "c") renderCatalog(seg[1] || "todo", params);
   else if (seg[0] === "p" && BY[seg[1]]) renderProduct(BY[seg[1]]);
   else if (seg[0] === "buscar") renderCatalog("todo", params);
   else if (seg[0] === "info") renderInfo(seg[1]);
+  else if (seg[0] === "contacto") renderContact();
   else renderHome();
   const y = store.get("dogker-scroll", {})[location.hash] || 0;
   requestAnimationFrame(() => window.scrollTo(0, seg[0] === "p" ? 0 : y));
@@ -269,16 +276,67 @@ function renderProduct(p) {
   $("#zoomBtn").onclick = () => { $("#zoomImg").src = p.imagenes[img] || p.imagen; $("#zoomImg").alt = p.nombre; $("#zoom").showModal(); };
 }
 
+// Texto editable con formato mínimo: "## " título, "- " viñeta, cualquier otra línea = párrafo.
+function rich(k) {
+  let html = "", list = false;
+  for (const l of lines(k)) {
+    const item = l.startsWith("- ");
+    if (list && !item) { html += "</ul>"; list = false; }
+    if (item) { if (!list) { html += "<ul>"; list = true; } html += `<li>${esc(l.slice(2))}</li>`; }
+    else if (l.startsWith("## ")) html += `<h2>${esc(l.slice(3))}</h2>`;
+    else html += `<p>${esc(l)}</p>`;
+  }
+  return html + (list ? "</ul>" : "");
+}
+
+const LEGAL_PAGES = [["terminos", "Términos y condiciones"], ["pqrs", "PQRS, garantías y devoluciones"], ["envios", "Políticas de envío"], ["privacidad", "Privacidad de datos"]];
 function renderInfo(page) {
-  const paras = (k) => lines(k).map((l) => `<p>${esc(l)}</p>`).join("");
   const pages = {
-    "como-pedir": ["Cómo pedir", paras("page_como_pedir")],
+    "como-pedir": ["Cómo pedir", rich("page_como_pedir")],
     entregas: ["Entregas y envíos", deliveryBlock(deliveryEstimate(new Date()))],
-    politicas: ["Políticas comerciales", paras("page_politicas")],
+    envios: ["Políticas de envío", deliveryBlock(deliveryEstimate(new Date())) + rich("page_envios")],
+    terminos: ["Términos y condiciones", rich("page_terminos")],
+    pqrs: ["PQRS, garantías y devoluciones", rich("page_pqrs") + `<p><a class="btn btn--primary" href="#/contacto">${icon("wa")}Radicar una PQRS</a></p>`],
+    privacidad: ["Privacidad de datos", rich("page_privacidad")],
   };
+  pages.politicas = pages.terminos; // enlace antiguo
   const [title, html] = pages[page] || pages["como-pedir"];
+  const legal = LEGAL_PAGES.some(([s]) => s === page);
   document.title = title + " · Dögker";
-  main.innerHTML = `<div class="wrap section"><h1 style="font-size:clamp(2.4rem,5vw,4rem);margin-bottom:24px">${title}</h1>${html}</div>`;
+  main.innerHTML = `<div class="wrap section"><nav class="crumbs" aria-label="Ruta"><a href="#/">Inicio</a>${icon("chev")}<span>${title}</span></nav>
+    <h1 style="font-size:clamp(2.4rem,5vw,4rem);margin-bottom:24px">${title}</h1>
+    ${legal ? `<div class="scroller" style="margin-bottom:28px">${LEGAL_PAGES.map(([s, n]) => `<a class="chip" href="#/info/${s}" aria-current="${s === page}">${n}</a>`).join("")}</div>` : ""}
+    <div class="legal">${html}</div></div>`;
+}
+
+function renderContact() {
+  document.title = "Contáctenos · Dögker";
+  const email = t("contact_email").trim();
+  main.innerHTML = `<div class="wrap section"><nav class="crumbs" aria-label="Ruta"><a href="#/">Inicio</a>${icon("chev")}<span>Contáctenos</span></nav>
+    <div class="contact">
+      <div><h1 style="font-size:clamp(2.4rem,5vw,4rem)">${esc(t("contact_title"))}</h1>
+        <p class="muted" style="font-size:18px;max-width:520px">${esc(t("contact_text"))}</p>
+        <ul class="contact__list">
+          <li>${icon("wa")}<div><b>WhatsApp</b><br><a href="https://wa.me/${esc(t("whatsapp_number"))}" target="_blank" rel="noopener">${esc(t("whatsapp_display"))}</a></div></li>
+          <li>${icon("ig")}<div><b>Instagram</b><br><a href="https://www.instagram.com/${esc(t("instagram_user"))}/" target="_blank" rel="noopener">@${esc(t("instagram_user"))}</a></div></li>
+          ${email ? `<li>${icon("mail")}<div><b>Correo</b><br><a href="mailto:${esc(email)}">${esc(email)}</a></div></li>` : ""}
+          <li>${icon("clock")}<div><b>Horario</b><br>${esc(t("contact_hours"))}<br><span class="muted">${esc(t("contact_city"))}</span></div></li>
+        </ul></div>
+      <form class="contact__form" id="cform">
+        <h2 style="font-size:28px">Escríbenos</h2>
+        <p class="muted small" style="margin:0">Tu mensaje se abre en WhatsApp listo para enviar. No guardamos tus datos en este formulario.</p>
+        <label class="cf"><span>Tu nombre</span><input id="cname" required maxlength="80" autocomplete="name"></label>
+        <label class="cf"><span>Motivo</span><select id="ctype"><option>Consulta sobre un producto</option><option>Mi pedido</option><option>Petición</option><option>Queja</option><option>Reclamo o garantía</option><option>Sugerencia</option></select></label>
+        <label class="cf"><span>Mensaje</span><textarea id="cmsg" required rows="5" maxlength="1000"></textarea></label>
+        <button class="btn btn--primary btn--block">${icon("wa")}Enviar por WhatsApp</button>
+        <p class="small muted" style="margin:0">Consulta nuestras <a href="#/info/pqrs">PQRS</a> y la <a href="#/info/privacidad">política de privacidad</a>.</p>
+      </form>
+    </div></div>`;
+  $("#cform").onsubmit = (e) => {
+    e.preventDefault();
+    const text = `Hola Dögker, soy ${$("#cname").value.trim()}.\nMotivo: ${$("#ctype").value}\n\n${$("#cmsg").value.trim()}`;
+    window.open(`https://wa.me/${DK.WA_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+  };
 }
 
 /* ---------- Mi pedido ---------- */
@@ -337,7 +395,14 @@ function renderDrawer() {
 }
 
 /* ---------- chrome ---------- */
+function closeMenus() {
+  $("#mainNav").classList.remove("open"); $("#menuBtn").setAttribute("aria-expanded", "false");
+  const b = $("#prodBtn"); if (b) { b.setAttribute("aria-expanded", "false"); b.parentElement.classList.remove("open"); }
+}
 function wireChrome() {
+  document.addEventListener("click", (e) => { if (!e.target.closest(".dd")) { const b = $("#prodBtn"); if (b && innerWidth >= 1024) { b.setAttribute("aria-expanded", "false"); b.parentElement.classList.remove("open"); } } });
+  addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenus(); });
+  matchMedia("(min-width:1024px)").addEventListener("change", closeMenus); // menú móvil abierto al pasar a escritorio
   $("#cartBtn").onclick = openDrawer; $("#closeDrawer").onclick = closeDrawer; $("#backdrop").onclick = closeDrawer;
   addEventListener("keydown", (e) => { if (e.key === "Escape" && $("#drawer").classList.contains("open")) closeDrawer(); });
   $("#menuBtn").onclick = () => { const n = $("#mainNav"); const o = n.classList.toggle("open"); $("#menuBtn").setAttribute("aria-expanded", o); };
