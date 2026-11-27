@@ -191,6 +191,7 @@ function renderHome() {
     </div>
     ${deliveryBlock(d)}
   </section>`;
+  startCatSlider();
 }
 
 // Todas las categorías (menú + colecciones con productos) en una cinta infinita: la lista va dos veces y se desplaza -50%.
@@ -198,7 +199,39 @@ function catSlider() {
   const items = DEPTS.flatMap((d) => [{ name: d.name, href: `#/c/${d.slug}`, img: d.image },
     ...d.cols.map((c) => { const p = P.find((x) => x._col === c); return p && c !== d.name && { name: c.replace(/^Peluches /, ""), href: `#/c/${d.slug}?col=${slugify(c)}`, img: p.imagen }; }).filter(Boolean)]);
   const html = (hidden) => items.map((x) => `<a href="${x.href}" ${hidden ? 'aria-hidden="true" tabindex="-1"' : ""}><div class="disc">${x.img ? `<img loading="lazy" decoding="async" src="${esc(pic(x.img, 1))}" alt="" width="96" height="96">` : ""}</div>${esc(x.name)}</a>`).join("");
-  return `<div class="cats-slider" style="--dur:${items.length * 3}s"><div class="cats">${html(false)}${html(true)}</div></div>`;
+  return `<div class="cats-wrap"><button class="cats-nav cats-nav--prev" data-cats="-1" aria-label="Categorías anteriores">${icon("chev")}</button>
+    <div class="cats-slider" id="catsSlider" role="region" aria-label="Categorías"><div class="cats">${html(false)}${html(true)}</div></div>
+    <button class="cats-nav" data-cats="1" aria-label="Más categorías">${icon("chev")}</button></div>`;
+}
+
+// Cinta con scroll real (así cargan las fotos diferidas y se puede deslizar con el dedo). Bucle: al pasar la mitad, vuelve -mitad.
+let catsRAF = 0;
+function startCatSlider() {
+  cancelAnimationFrame(catsRAF);
+  const el = $("#catsSlider"); if (!el) return;
+  const half = () => el.scrollWidth / 2;
+  // Salto de bucle solo en los bordes reales: cualquier posición intermedia se ve igual porque el contenido va duplicado.
+  const wrap = () => { if (el.scrollLeft >= el.scrollWidth - el.clientWidth - 1) el.scrollLeft -= half(); else if (el.scrollLeft <= 0) el.scrollLeft += half(); };
+  let pausedUntil = 0, hover = false, pos = el.scrollLeft = 1;
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const pause = (ms) => (pausedUntil = performance.now() + ms);
+  el.addEventListener("pointerenter", () => (hover = true)); el.addEventListener("pointerleave", () => (hover = false));
+  el.addEventListener("focusin", () => pause(8000));
+  el.addEventListener("touchstart", () => pause(4000), { passive: true });
+  el.addEventListener("scroll", () => { wrap(); if (performance.now() < pausedUntil || hover) pos = el.scrollLeft; }, { passive: true });
+  document.querySelectorAll("[data-cats]").forEach((b) => (b.onclick = () => {
+    pause(4000);
+    const step = el.clientWidth * 0.8 * +b.dataset.cats;
+    if (step < 0 && el.scrollLeft + step <= 0) el.scrollLeft += half(); // hay "espacio" atrás antes del salto suave
+    el.scrollBy({ left: step, behavior: still ? "auto" : "smooth" });
+  }));
+  const tick = () => {
+    if (!el.isConnected) return;
+    // pos lleva decimales: el navegador redondea scrollLeft y leerlo de vuelta dejaría la cinta quieta
+    if (!still && !hover && performance.now() > pausedUntil) { pos += 0.4; if (pos >= el.scrollWidth - el.clientWidth - 1) pos -= half(); el.scrollLeft = pos; }
+    catsRAF = requestAnimationFrame(tick);
+  };
+  catsRAF = requestAnimationFrame(tick);
 }
 
 function deliveryBlock(d) {

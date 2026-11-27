@@ -132,12 +132,16 @@ h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;le
 .section__head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:24px;flex-wrap:wrap}
 .section h2{font-size:clamp(1.9rem,3.4vw,3rem)}
 /* cinta infinita de categorías: margen por ítem (no gap) para que las dos mitades midan igual */
-.cats-slider{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.cats{display:flex;width:max-content;animation:cats var(--dur,60s) linear infinite}
-.cats-slider:hover .cats,.cats-slider:focus-within .cats{animation-play-state:paused}
-@keyframes cats{to{transform:translateX(-50%)}}
+.cats-wrap{position:relative}
+.cats-slider{overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.cats-slider::-webkit-scrollbar{display:none}
+.cats{display:flex;width:max-content;padding:4px 0}
 .cats a{flex:0 0 auto;width:96px;margin-right:14px;text-align:center;text-decoration:none;font-size:13px;font-weight:500}
-@media (prefers-reduced-motion:reduce){.cats-slider{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.cats a[aria-hidden]{display:none}}
+.cats-nav{position:absolute;top:34%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);display:grid;place-items:center;box-shadow:0 8px 20px -10px rgba(43,29,26,.35);right:-6px}
+.cats-nav--prev{right:auto;left:-6px}
+.cats-nav--prev .ic{transform:rotate(180deg)}
+.cats-nav:hover{background:var(--ink);color:#fff}
+@media (min-width:1024px){.cats-nav{right:-22px}.cats-nav--prev{left:-22px}}
 .cats .disc{aspect-ratio:1;border-radius:999px;overflow:hidden;background:var(--card);border:1px solid var(--line);margin-bottom:8px;transition:border-color .2s var(--ease)}
 .cats a:hover .disc{border-color:var(--ink-3)}
 .cats img{width:100%;height:100%;object-fit:cover;transform:scale(1.4)}
