@@ -113,7 +113,7 @@ function card(p) {
   const quick = p.variants.length > 1 || g.length > 1;
   return `<article class="card">
     <a class="card__media" href="#/p/${p.id}" tabindex="-1" aria-hidden="true"><img loading="lazy" decoding="async" src="${esc(pic(p.imagen, 1))}" ${srcset(p.imagen)} sizes="(min-width:1200px) 25vw, (min-width:768px) 33vw, 50vw" alt="" width="540" height="600" ${agot ? 'style="opacity:.5"' : ""}>
-      ${agot ? '<span class="badge badge--ink">Agotado temporalmente</span>' : ""}</a>
+      ${agot ? '<span class="badge badge--ink">Agotado temporalmente</span>' : p.variants.some((v) => !v.inStock) ? '<span class="badge badge--ivory">Algunas tallas agotadas</span>' : ""}</a>
     <div><div class="card__cat">${esc(p._col)}</div>
       <a class="card__name" href="#/p/${p.id}">${esc(g.length > 1 ? p._base : p.nombre)}</a>
       <div class="card__meta">${opts}</div></div>

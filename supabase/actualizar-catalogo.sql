@@ -11,6 +11,7 @@ update public.products set description = 'Para esos paseos en los que quieres ve
 update public.product_variants set price = 39000 where product_id in (select id from public.products where slug in ('collar-atomic')) and split_part(size_label, ' (', 1) = 'M';
 update public.product_variants set price = 45900 where product_id in (select id from public.products where slug in ('collar-atomic')) and split_part(size_label, ' (', 1) = 'L';
 update public.product_variants set price = 53100 where product_id in (select id from public.products where slug in ('collar-atomic')) and split_part(size_label, ' (', 1) = 'XL';
+update public.product_variants set in_stock = false where product_id in (select id from public.products where slug in ('collar-atomic'));
 -- Collar Running DISPONIBLE S, L & XL
 update public.products set description = 'Si tu perro disfruta salir, correr y explorar, este collar está hecho para acompañar su energía. Su diseño de rombos, los detalles reflectivos y la variedad de tallas crean una combinación práctica, cómoda y con un aire deportivo.' where slug in ('collar-running');
 update public.product_variants set price = 32300 where product_id in (select id from public.products where slug in ('collar-running')) and split_part(size_label, ' (', 1) = 'S';

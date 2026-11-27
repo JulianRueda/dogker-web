@@ -62,7 +62,7 @@ const EXISTING = {
 // Disponibilidad según el título de la ficha: "out" = agotado; lista = solo esas tallas disponibles; sin entrada = todo disponible.
 const STOCK = { 120: "out", 130: "out", 150: "out", 188: "out", 198: "out", 218: "out", 228: "out", 552: "out", 668: "out", 746: "out",
   22: ["S", "L", "XL"], 160: ["XS", "S", "L"], 720: ["S"], 786: ["S", "L"], 913: ["Correa"],
-  12: "skip" }; // Atomic: dice "solo S" pero no tiene talla S -> no se toca, queda para revisión
+  12: "out" }; // Atomic: el Word dice "solo S" pero no tiene talla S; el cliente decidió agotado (27-nov)
 
 /* ---------- Productos nuevos ---------- */
 const P = (slug, name, line, cat, imgs, extra = {}) => ({ slug, name, line, cat, imgs, ...extra });
