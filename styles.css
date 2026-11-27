@@ -131,12 +131,17 @@ h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;le
 @media (min-width:1024px){.section{padding-top:96px;padding-bottom:96px}.section--tight{padding-top:72px;padding-bottom:32px}}
 .section__head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:24px;flex-wrap:wrap}
 .section h2{font-size:clamp(1.9rem,3.4vw,3rem)}
-.cats{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none}
-.cats a{flex:0 0 auto;width:96px;text-align:center;text-decoration:none;font-size:13px;font-weight:500}
+/* cinta infinita de categorías: margen por ítem (no gap) para que las dos mitades midan igual */
+.cats-slider{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.cats{display:flex;width:max-content;animation:cats var(--dur,60s) linear infinite}
+.cats-slider:hover .cats,.cats-slider:focus-within .cats{animation-play-state:paused}
+@keyframes cats{to{transform:translateX(-50%)}}
+.cats a{flex:0 0 auto;width:96px;margin-right:14px;text-align:center;text-decoration:none;font-size:13px;font-weight:500}
+@media (prefers-reduced-motion:reduce){.cats-slider{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.cats a[aria-hidden]{display:none}}
 .cats .disc{aspect-ratio:1;border-radius:999px;overflow:hidden;background:var(--card);border:1px solid var(--line);margin-bottom:8px;transition:border-color .2s var(--ease)}
 .cats a:hover .disc{border-color:var(--ink-3)}
 .cats img{width:100%;height:100%;object-fit:cover;transform:scale(1.4)}
-@media (min-width:1024px){.cats a{flex:1;width:auto;font-size:15px}}
+@media (min-width:1024px){.cats a{width:128px;margin-right:24px;font-size:15px}}
 
 /* product grid + card */
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 12px}

@@ -168,7 +168,7 @@ function renderHome() {
     </div></section>
 
   <section class="section section--tight wrap"><div class="section__head"><h2>${esc(t("categories_title"))}</h2><a class="more" href="#/c/todo">Ver todo${icon("arrow")}</a></div>
-    <div class="cats">${DEPTS.map((x) => `<a href="#/c/${x.slug}"><div class="disc">${x.image ? `<img loading="lazy" decoding="async" src="${esc(pic(x.image, 1))}" alt="" width="96" height="96">` : ""}</div>${esc(x.name)}</a>`).join("")}</div></section>
+    ${catSlider()}</section>
 
   ${feat.length ? `<section class="section wrap" style="padding-top:40px"><div class="section__head"><div><div class="eyebrow">${esc(t("featured_eyebrow"))}</div><h2>${esc(t("featured_title"))}</h2></div>
     <a class="btn btn--secondary" href="${esc(t("featured_button_link"))}">${esc(t("featured_button_text"))}</a></div>
@@ -191,6 +191,14 @@ function renderHome() {
     </div>
     ${deliveryBlock(d)}
   </section>`;
+}
+
+// Todas las categorías (menú + colecciones con productos) en una cinta infinita: la lista va dos veces y se desplaza -50%.
+function catSlider() {
+  const items = DEPTS.flatMap((d) => [{ name: d.name, href: `#/c/${d.slug}`, img: d.image },
+    ...d.cols.map((c) => { const p = P.find((x) => x._col === c); return p && c !== d.name && { name: c.replace(/^Peluches /, ""), href: `#/c/${d.slug}?col=${slugify(c)}`, img: p.imagen }; }).filter(Boolean)]);
+  const html = (hidden) => items.map((x) => `<a href="${x.href}" ${hidden ? 'aria-hidden="true" tabindex="-1"' : ""}><div class="disc">${x.img ? `<img loading="lazy" decoding="async" src="${esc(pic(x.img, 1))}" alt="" width="96" height="96">` : ""}</div>${esc(x.name)}</a>`).join("");
+  return `<div class="cats-slider" style="--dur:${items.length * 3}s"><div class="cats">${html(false)}${html(true)}</div></div>`;
 }
 
 function deliveryBlock(d) {
